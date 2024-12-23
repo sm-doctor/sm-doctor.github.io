@@ -13,7 +13,7 @@
 
 theme: jekyll-agency
 
-url    : "" # the base hostname & protocol for your site, e.g. http://example.com
+url    : "https://sm-doctor.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
 title      : SM.DOCTOR
@@ -24,7 +24,7 @@ author     : OHULAB.ORG
   # path: assets\img\clients\creative-market.jpg
   # height: 60 #height in px, defaults to 52px
 
-locale: "ZH-CN" # See available languages in _data/sitetext.yml
+locale: "en-us" # See available languages in _data/sitetext.yml
 
 analytics:
   google: #Google Analytics tracking code here
