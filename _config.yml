@@ -13,18 +13,18 @@
 
 theme: jekyll-agency
 
-url    : "https://sm-doctor.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url    : "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
-title      : SM.DOCTOR
+title      : Bluey.earth
 email      : ohulab.org@gmail.com #this is also the email contact forms will go to
-description: "Systemic Medicine"
-author     : OHULAB.ORG
+description: "WEB3BRAIN AGI AGENT"
+author     : ocean.x
 # logo:     #optional, defaults to site title
   # path: assets\img\clients\creative-market.jpg
   # height: 60 #height in px, defaults to 52px
 
-locale: "en-us" # See available languages in _data/sitetext.yml
+locale: "en-US" # See available languages in _data/sitetext.yml
 
 analytics:
   google: #Google Analytics tracking code here
