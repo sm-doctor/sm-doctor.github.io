@@ -3,30 +3,32 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - main  # 如果您的默认分支不是 "main"，请相应修改
+      - main
 
 jobs:
-  deploy:
-    runs-on: ubuntu-22.04
-    permissions:
-      contents: write
+  build-deploy:
+    runs-on: ubuntu-20.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
-          fetch-depth: 0    # 获取完整历史记录，以便支持 .GitInfo 和 .Lastmod
+          submodules: true
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.110.0"  # 使用与您的站点兼容的 Hugo 版本
+          hugo-version: "latest"
 
       - name: Build
         run: hugo --minify
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
-        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
           publish_dir: ./public
-          publish_branch: gh-pages  # 部署到的分支
