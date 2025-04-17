@@ -1,10 +1,14 @@
+<<<<<<< HEAD
 # .github/workflows/gh-pages.yml
 
+=======
+>>>>>>> main
 name: GitHub Pages
 
 on:
   push:
     branches:
+<<<<<<< HEAD
       - main
 
 jobs:
@@ -18,19 +22,45 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
+=======
+      - main  # 如果您的默认分支不是 "main"，请相应修改
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0    # 获取完整历史记录，以便支持 .GitInfo 和 .Lastmod
+>>>>>>> main
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
+<<<<<<< HEAD
           hugo-version: "latest"
+=======
+          hugo-version: "0.110.0"  # 使用与您的站点兼容的 Hugo 版本
+>>>>>>> main
 
       - name: Build
         run: hugo --minify
 
       - name: Deploy
+<<<<<<< HEAD
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./public
+=======
+        uses: peaceiris/actions-gh-pages@v4
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages  # 部署到的分支
+>>>>>>> main
