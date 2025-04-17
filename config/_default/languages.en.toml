@@ -1,0 +1,29 @@
+disabled = false
+languageCode = "en"  #文字编码
+languageName = "English"  #多语言显示名称
+weight = 1
+title = "SM.DOCTOR"
+
+[params]
+  displayName = "English"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  # logo = "logo1.png" #夜晚模式LOGO
+  # secondaryLogo = "logo2.png" #白天模式LOGO
+  description = "Human Health Plan - Health Philosophy,the First Principles of Health,Methodologies of Health Systems Engineering,Approaches to the Integration of Medical Care and Elderly Care,and the Construction of the Ecosystem of the Grand Health Industry."
+
+[params.author]
+  image = "/img/logo3.png" #首页中心LOGO
+  name = "Human Health Plan" #首页中间LOGO下名称
+  headline = "Systemic Medicine Doctor"   #首页标语
+  bio = "SMD Evidence-Based Medicine: Theory & Application."   #文章页LOGO下说明标语
+  links = [
+    { x-twitter = "https://x.com/BlueyASI_org" },
+    { bluesky = "#" },
+    { facebook = "#" },
+    { instagram = "#" },
+    { telegram = "#" },
+    { github = "mailto:ohulab.org@gmail.com" },
+  ]  #文章页作者LOGO下社交媒体图标连接
+  email = "ohulab.org@gmail.com"
