@@ -1,5 +1,5 @@
 ---
-title: "Integrated Healthcare Methodology"
+title: "3.Integrated Healthcare Methodology"
 date: 2025-01-01
 externalUrl: "whitepaper/smd-methodology/#3"
 draft: false

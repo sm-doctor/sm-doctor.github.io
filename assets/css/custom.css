@@ -116,7 +116,7 @@
  /* 定义了首页社交媒体图标样式 */
  .custom-icon-sm{
   color:inherit; 
-  margin:0px 5px; 
+  margin:0px 12px; 
   font-size:28px;
   text-decoration: none; 
   transition: color 0.3s ease;
