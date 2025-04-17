@@ -1,36 +1,38 @@
-# .github/workflows/gh-pages.yml
-
 name: GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04  # 更新至最新LTS版本
+    permissions:
+      contents: write  # 必须添加的权限
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # 升级至最新版
         with:
-          submodules: true
+          submodules: recursive
           fetch-depth: 0
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3  # 使用v3版本
         with:
-          hugo-version: "latest"
+          hugo-version: "0.123.0"  # 固定为具体版本
+          extended: true  # 如果使用Hugo扩展版必须添加
 
       - name: Build
-        run: hugo --minify
+        run: |
+          hugo --minify --gc --cleanDestinationDir
+          ls -al public  # 验证生成文件
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: peaceiris/actions-gh-pages@v4  # 升级至最新版
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./public
+          force_orphan: true  # 强制清理旧内容
