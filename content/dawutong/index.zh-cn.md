@@ -9,7 +9,7 @@ showLikes: false
 showAuthor: false
 showZenMode: false
 showTableOfContents: true
-layoutBackgroundHeaderSpace: true
+layoutBackgroundHeaderSpace: false
 sharingLinks: false
 showComments: false
 ---
