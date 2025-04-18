@@ -1,4 +1,4 @@
-colorScheme = "ocean"
+colorScheme = "Slate"
 defaultAppearance = "dark"
 autoSwitchAppearance = false
 enableSearch = true
@@ -75,7 +75,7 @@ mainSections = ["whitepaper"]
   showLikes = false
   showTableOfContents = false
   showCards = false
-  orderByWeight = false
+  orderByWeight = true
   groupByYear = false
   cardView = true
   cardViewScreenWidth = false
