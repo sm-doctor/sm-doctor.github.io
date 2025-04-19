@@ -33,4 +33,4 @@ showComments: false
 > On the one hand, there is a huge financial expenditure of the state in the medical industry. On the other hand, ordinary people are plunged into poverty or return to poverty due to illness. When one person has a serious illness, the whole family suffers. Having a healthy, happy life without diseases has almost become a luxury for mankind.
 
 ### IV. New Scientific Revolution
-> The motivation for scientific research of the SMD project. The development of life science is an inevitable trend of the progress of human civilization. Scientific traditional Chinese medicine will not only trigger a cognitive revolution for mankind but also trigger a modern scientific revolution. —— Qian Xuesen
+> The scientific research motivation of the SMD project. The development of life sciences is an inevitable trend in the advancement of human civilization, and the evolution of medicine is inevitably the development of life sciences. (The development of traditional Chinese medicine <science> will not only trigger a revolution in human cognition but also a revolution in modern science —— Qian Xuesen).
