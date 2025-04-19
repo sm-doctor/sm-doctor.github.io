@@ -22,8 +22,6 @@ showComments: false
 
 <h2>Project Motivations: Four Major Topics</h2> 
 
----
-
 ## I. Medical Dilemmas
 
 > When various chronic diseases and sudden epidemics have become the main causes of human death, chronic diseases such as cardiovascular diseases, cancers, and diabetes have become the great enemies of mankind. The mainstream traditional Chinese and Western medicine still lacks completely effective solutions. Reflecting on the methodology of modern medical and health care philosophy is the primary work to solve human health problems.
