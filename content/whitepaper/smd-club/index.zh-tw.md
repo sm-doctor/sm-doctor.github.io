@@ -1,15 +1,18 @@
 ---
-title: ""
+title: "SMD俱樂部"
 date: 2025-01-01
+weight: 35
 draft: false
 description: ""
-tags: ["", ""]
+tags: ["動機篇","願景篇"]
 showViews: false
 showLikes: false
-showAuthor: false
+showAuthor: true
 showZenMode: false
-showTableOfContents: false
+showTableOfContents: true
 layoutBackgroundHeaderSpace: false
 sharingLinks: false
 showComments: false
 ---
+
+{{< smd_preface "article.smd_preface" >}}
