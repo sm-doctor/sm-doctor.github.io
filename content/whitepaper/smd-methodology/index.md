@@ -1,5 +1,5 @@
 ---
-title: "The Methodology of SMD"
+title: "SMD Methodology"
 date: 2025-01-01
 weight: 20
 draft: false

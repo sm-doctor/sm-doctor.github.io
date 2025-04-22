@@ -1,5 +1,5 @@
 ---
-title: "The Origin of the SMD Project"
+title: "SMD Origin"
 date: 2025-01-01
 weight: 10
 draft: false
