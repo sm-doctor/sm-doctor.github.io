@@ -33,17 +33,14 @@
 .text-4xl-sm {
   font-size: 30px;
   line-height: 2.5rem;
-  letter-spacing: 0px;
+  letter-spacing: -0.5px;
 }
-
-
-
 /* 定义了首页中间LOGO图下第二行说明文字样式 */
 .text-xl-sm {
-  font-size: 22.5px;
+  font-size: 20px;
   line-height: 1.5rem;
   font-weight: 400;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 .mb-0-sm{
   margin-top: 2px;

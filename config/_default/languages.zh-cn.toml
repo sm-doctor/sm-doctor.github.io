@@ -15,8 +15,8 @@ title = "SM.DOCTOR"
 
 [params.author]
   image = "/img/logo3.png" #首页中心LOGO
-  name = "人类健康计划" #首页中间LOGO下大字名称
-  headline = "Systemic Medicine Doctor"   #首页标语
+  name = "Systemic Medicine Doctor" #首页中间LOGO下大字名称
+  headline = "『人类健康计划』大健康文化全球化推广方案"   #首页标语
   bio = "SMD循证医学理论与应用"   #文章页作者图标下说明标语
   links = [
     { weixin = "../../Contact" },
