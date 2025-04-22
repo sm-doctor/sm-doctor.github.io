@@ -1,9 +1,9 @@
 ---
-title: " 『Human Health Plan』Project White Paper"
+title: "『Human Health Initiative』Project White Paper"
 date: 2025-01-01
 draft: false
-description: "『Human Health Plan』Project White Paper"
-tags: ["", ""]
+description: "『Human Health Initiative』Project White Paper"
+tags: [""]
 ---
 
 <p></p>
