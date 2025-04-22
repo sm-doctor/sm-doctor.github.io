@@ -27,7 +27,7 @@ mainSections = ["whitepaper"]
 
 [homepage]
   layout = "custom"
-  homepageImage = "index_bg.png"
+  homepageImage = "index_bg.jpg"
   showRecent = true
   showRecentItems = 9
   showMoreLink = true
