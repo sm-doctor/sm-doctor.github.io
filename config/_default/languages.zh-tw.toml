@@ -16,7 +16,7 @@ title = "SM.DOCTOR"
 [params.author]
   image = "/img/logo3.png" #首页中心LOGO
   name = "Systemic Medicine Doctor" #首页中间LOGO下名称
-  headline = "『人類健康計劃』大健康文化全球化推廣方案"   #首页标语
+  headline = "為全球加盟醫館賦能的專業人工智能"   #首页标语
   bio = "SMD循證醫學理論與應用"   #文章页作者图标下说明标语
   links = [
     { x-twitter = "https://x.com/BlueyASI_org" },

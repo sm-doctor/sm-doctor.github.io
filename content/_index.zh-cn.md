@@ -19,7 +19,7 @@ class="custom-icon-sm">{{< icon "redbook" >}}</a>
 <a href="mailto:ohulab.org@gmail.com" target="_blank" class="custom-icon-sm">{{< icon "email" >}}</a>
 </div>
 
-
+<!--
 
 <!-- 简体中文版首页右下角图片广告 -->
 <!-- 浮动图片样式 -->
