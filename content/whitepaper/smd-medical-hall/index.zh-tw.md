@@ -1,5 +1,5 @@
 ---
-title: "SMD醫養館"
+title: "SMD醫館"
 date: 2025-01-01
 draft: false
 weight: 50
@@ -18,7 +18,7 @@ showComments: false
 
 {{< smd_preface "article.smd_preface" >}}
 
-<h3>SMD醫養館</h3>
+<h3>SMD醫館</h3>
 
 >SMD系統療法醫養一體化醫療養生館
 
