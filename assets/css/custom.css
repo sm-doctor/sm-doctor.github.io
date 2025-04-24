@@ -37,10 +37,10 @@
 }
 /* 定义了首页中间LOGO图下第二行说明文字样式 */
 .text-xl-sm {
-  font-size: 1.4rem;
-  line-height: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
   font-weight: 400;
-  letter-spacing: 1.5px;
+  letter-spacing: 0px;
 }
 .mb-0-sm{
   margin-top: 2px;
