@@ -19,11 +19,11 @@ title = "SM.DOCTOR"
   headline = "為全球加盟的SMD醫療養生館賦能的專業人工智能"   #首页标语
   bio = "SMD循證醫學理論與應用"   #文章页作者图标下说明标语
   links = [
-    { x-twitter = "https://x.com/BlueyASI_org" },
+    { x-twitter = "#" },
     { bluesky = "#" },
     { facebook = "#" },
     { instagram = "#" },
     { telegram = "#" },
-    { github = "mailto:ohulab.org@gmail.com" },
+    { github = "#" },
   ]  #文章页作者LOGO下社交媒体图标连接
   email = "ohulab.org@gmail.com"
