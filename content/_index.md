@@ -5,7 +5,7 @@ description: ""
 
 <div class="flex justify-center"><img src="/headline1.png" style="margin-top:0px; margin-bottom:0px;"></div>
 
-<div style="margin-top:-10px; margin-bottom:15px;">Professional Artificial Intelligence Empowering Global Franchise Medical Clinics</div>
+<div style="line-height: 1.3; margin-top:0px; margin-bottom:15px;">Professional Artificial Intelligence Empowering Global Franchise Medical Clinics</div>
 
 <div style="width: 100%; text-align: center; background-color: rgba(4, 18, 1, 0.4); padding: 1px; margin-bottom: 7px; border-radius: 20px; letter-spacing: 0px; 
 color:inherit; line-height: 2; opacity: 0.5;">Project's Three Core Logics</div>
