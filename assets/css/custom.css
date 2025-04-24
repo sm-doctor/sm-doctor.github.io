@@ -10,24 +10,6 @@
 
 
 
-/* 定义了首页中心位置LOGO样式 */
-.custom-logo3-sm {
-  content: url('/img/logo4.png'); /* 白天模式LOGO图片 */
-  width: 144px; 
-  height: 144px; 
-  margin-top: 40px; 
-  margin-bottom: 0px;
-}
-.dark .custom-logo3-sm {
-  content: url('/img/logo3.png'); /* 夜晚模式LOGO图片 */
-  width: 144px; 
-  height: 144px; 
-  margin-top: 40px; 
-  margin-bottom: 0px;
- }
-
-
-
 
 /* 定义了首页中心LOGO图下第一行文字样式 */
 .text-4xl-sm {
@@ -46,6 +28,15 @@
   margin-top: 2px;
   margin-bottom: 15px;
 }
+
+/* 定义了首页手机端文字样式 */
+@media (max - width: 600px) {
+  .index-headline-sm {
+     font - size: 12px; /* 调整为适合手机的字体大小 */
+     text - align: justify;
+   }
+ }
+
 
 
 
@@ -249,6 +240,6 @@
 
 /* 定义与替换了首页中间位置LOGO上下边距 */
 .smd_logo_margin {
-  margin-top: -40px;
-  margin-bottom: -15px;
+  margin-top: -20px;
+  margin-bottom: -25px;
 }
