@@ -10,33 +10,11 @@
 
 
 
-
-/* 定义了首页中心LOGO图下第一行文字样式 */
-.text-4xl-sm {
-  font-size: 30px;
-  line-height: 2.5rem;
-  letter-spacing: -0.5px;
+/* 定义与替换了首页中间位置LOGO上下边距 */
+.smd_logo_margin {
+  margin-top: -20px;
+  margin-bottom: -25px;
 }
-/* 定义了首页中间LOGO图下第二行说明文字样式 */
-.text-xl-sm {
-  font-size: 1.1rem;
-  line-height: 1.1rem;
-  font-weight: 400;
-  letter-spacing: 0px;
-}
-.mb-0-sm{
-  margin-top: 2px;
-  margin-bottom: 15px;
-}
-
-/* 定义了首页手机端文字样式 */
-@media (max - width: 600px) {
-  .index-headline-sm {
-     font - size: 12px; /* 调整为适合手机的字体大小 */
-     text - align: justify;
-   }
- }
-
 
 
 
@@ -47,60 +25,6 @@
 
 
 
-/* 英文首页LOGO与标语下的标签样式 */
-.custom-indextags-sm{
-  display: inline-block;
-  width: 260px;
-  padding-top: 4px; 
-  padding-bottom: 4px; 
-  color:inherit; 
-  font-size:15px; 
-  margin: 3px 3px; 
-  background-color: rgba(0, 123, 255, 0.3); 
-  text-decoration: none; 
-  border-radius: 20px;
- }
-.custom-indextags-sm:hover{
-  display: inline-block;
-  width: 260px;
-  padding-top: 4px; 
-  padding-bottom: 4px; 
-  font-size:15px; 
-  margin:3px 3px; 
-  background-color: rgba(4, 78, 162, 0.3); 
-  text-decoration: none; 
-  border-radius: 20px;
- }
-
-
-
-/* 简繁体中文首页LOGO与标语下的标签样式 */
-.custom-CnIndextags-sm{
-  display: inline-block;
-  width: 100px;
-  padding-top: 2px; 
-  padding-bottom: 2px; 
-  color:inherit; 
-  font-size:14.5px; 
-  margin: 3px 3px; 
-  background-color: rgba(0, 123, 255, 0.3); 
-  text-decoration: none; 
-  border-radius: 20px;
- }
-.custom-CnIndextags-sm:hover{
-  display: inline-block;
-  width: 100px;
-  padding-top: 2px; 
-  padding-bottom: 2px; 
-  font-size:14.5px; 
-  margin:3px 3px; 
-  background-color: rgba(4, 78, 162, 0.3); 
-  text-decoration: none; 
-  border-radius: 20px;
- }
-  
-
-
  /* 定义了首页社交媒体图标样式 */
  .custom-icon-sm{
   color:inherit; 
@@ -109,7 +33,6 @@
   text-decoration: none; 
   transition: color 0.3s ease;
 }
-
 
 
 
@@ -238,8 +161,6 @@
 
 
 
-/* 定义与替换了首页中间位置LOGO上下边距 */
-.smd_logo_margin {
-  margin-top: -20px;
-  margin-bottom: -25px;
-}
+
+
+

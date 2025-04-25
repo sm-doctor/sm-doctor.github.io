@@ -7,7 +7,7 @@ description: ""
 <div class="flex justify-center"><img src="/headline2.png" style="margin-top:0px; margin-bottom:0px;"></div>
 
 <div style="width: 100%; text-align: center; background-color: rgba(4, 18, 1, 0.4); padding: 1px; margin-bottom: 7px; border-radius: 20px; letter-spacing: 1.5px; 
-color:inherit; line-height: 2; opacity: 0.5;">--- 項目三大底層邏輯 ---</div>
+color:inherit; line-height: 2; opacity: 0.5;">--- SMD理論三大核心基礎 ---</div>
 
 <div style="width: 100%; text-align: left;">{{< list cardView=true limit=3 where="Type" value="sample" >}}</div>
 
