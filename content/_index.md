@@ -1,9 +1,9 @@
 ---
-title: "Human Health Plan"
+title: "Human Health Initiative"
 description: ""
 ---
 
-<div class="flex justify-center"><img src="/headline1.png" style="margin-top:0px; margin-bottom:0px;"></div>
+<div class="flex justify-center"><img src="/headline1.png" alt="Systemic Medicine Doctor" style="margin:0;"></div>
 
 <div style="line-height: 1.3; margin-top:0px; margin-bottom:15px;">Professional Artificial Intelligence Empowering Global Franchise Medical Clinics</div>
 
@@ -17,7 +17,7 @@ color:inherit; line-height: 2; opacity: 0.5;">SMD Theory's three core foundation
 
 
 <div style="margin-top:20px; white-space: nowrap;">
-<a href="https://x.com/BlueyASI_org" target="_blank" class="custom-icon-sm">{{< icon "x-twitter" >}}</a>
+<a href="#" target="_blank" class="custom-icon-sm">{{< icon "x-twitter" >}}</a>
 <a href="#" target="_blank" class="custom-icon-sm">{{< icon "bluesky" >}}</a>
 <a href="#" target="_blank" class="custom-icon-sm">{{< icon "facebook" >}}</a>
 <a href="#" target="_blank" class="custom-icon-sm">{{< icon "instagram" >}}</a>

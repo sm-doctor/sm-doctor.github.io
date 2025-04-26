@@ -12,7 +12,7 @@ color:inherit; line-height: 2; opacity: 0.5;">--- SMD理論三大核心基礎 --
 <div style="width: 100%; text-align: left;">{{< list cardView=true limit=3 where="Type" value="sample" >}}</div>
 
 <div style="margin-top:20px; white-space: nowrap;">
-<a href="https://x.com/BlueyASI_org" target="_blank" class="custom-icon-sm">{{< icon "x-twitter" >}}</a>
+<a href="#" target="_blank" class="custom-icon-sm">{{< icon "x-twitter" >}}</a>
 <a href="#" target="_blank" class="custom-icon-sm">{{< icon "bluesky" >}}</a>
 <a href="#" target="_blank" class="custom-icon-sm">{{< icon "facebook" >}}</a>
 <a href="#" target="_blank" class="custom-icon-sm">{{< icon "instagram" >}}</a>
