@@ -46,8 +46,9 @@
                     <img class="smd_logo_margin mb-2 rounded-full h-36 w-36" width="144" height="144" alt="{{ $.Site.Params.Author.name | default " Author" }}" src="{{ $authorImage.RelPermalink }}" />
                     {{ end }}
                 {{ end }}
-               
 
+               
+                    {{/* ---------从content文件夹调用index文件markdown内容----------- */}} 
                     <section class="prose-sm dark:prose-invert">{{ .Content }}</section>
 
                 </div>
@@ -57,10 +58,12 @@
 </article>
 
 
+{{/* ---------空白行高----------- */}} 
 <div style="margin-bottom: 100px;"></div>
 
 
 
+{{/* ---------最近的文章----------- */}} 
 <section>
     {{ partial "recent-articles/main.html" . }}
 </section>
