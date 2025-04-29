@@ -3,9 +3,17 @@ title: "Human Health Initiative"
 description: ""
 ---
 
-<div class="flex justify-center"><img src="/headline1.png" alt="Systemic Medicine Doctor" style="margin:0;"></div>
+
+<div class="custom-icon-smlogo">{{< icon "logo" >}}</div>
+
+
+<div class="w-full overflow-x-auto">
+  <div style="font-size: clamp(24px, 4vw, 35px); white-space: nowrap;" class="inline-block min-w-full text-center font-bold">Systemic Medicine Doctor</div>
+</div>
+
 
 <div style="line-height: 1.3; margin-top:0px; margin-bottom:15px;">Professional Artificial Intelligence Empowering Global Franchise Medical Clinics</div>
+
 
 <div style="width: 100%; text-align: center; background-color: rgba(4, 18, 1, 0.4); padding: 1px; margin-bottom: 7px; border-radius: 20px; letter-spacing: 0px; 
 color:inherit; line-height: 2; opacity: 0.5;">SMD Project's three core foundations</div>
@@ -20,5 +28,5 @@ color:inherit; line-height: 2; opacity: 0.5;">SMD Project's three core foundatio
 <a href="#" target="_blank" class="custom-icon-sm">{{< icon "facebook" >}}</a>
 <a href="#" target="_blank" class="custom-icon-sm">{{< icon "instagram" >}}</a>
 <a href="#" target="_blank" class="custom-icon-sm">{{< icon "telegram" >}}</a>
-<a href="#" target="_blank" class="custom-icon-sm">{{< icon"github" >}}</a>
+<a href="#" target="_blank" class="custom-icon-sm">{{< icon "github" >}}</a>
 </div>

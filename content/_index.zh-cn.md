@@ -4,7 +4,20 @@ description: ""
 ---
 
 
-<div class="flex justify-center"><img src="/headline.png" style="margin-top:0px; margin-bottom:0px;"></div>
+
+<div class="custom-icon-smlogo">{{< icon "logo" >}}</div>
+
+
+<div class="w-full overflow-x-auto">
+  <div style="font-size: clamp(24px, 4vw, 35px);" class="inline-block min-w-full text-center font-bold whitespace-nowrap">
+    Systemic Medicine Doctor
+  </div>
+  <div style="font-size: clamp(17px, 4vw, 25px); margin-top: -20px;" class="inline-block min-w-full text-center whitespace-nowrap">
+    为全球加盟SMD医馆赋能的专业人工智能
+  </div>
+</div>
+
+
 
 <div style="width: 100%; text-align: center; background-color: rgba(4, 18, 1, 0.4); padding: 1px; margin-bottom: 7px; border-radius: 20px; letter-spacing: 1.5px; color:inherit; line-height: 2; opacity: 0.5;" class="index-headline-sm">--- SMD项目三大底层逻辑 ---</div>
 

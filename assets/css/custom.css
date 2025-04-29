@@ -25,6 +25,19 @@
 
 
 
+
+ /* 定义LOGO图标样式 */
+ .custom-icon-smlogo{
+  color:inherit; 
+  margin:0px 0px; 
+  font-size:110px;
+  margin-top: -80px;
+  margin-bottom: -35px;
+  text-decoration: none; 
+} 
+ 
+ 
+
  /* 定义了首页社交媒体图标样式 */
  .custom-icon-sm{
   color:inherit; 
