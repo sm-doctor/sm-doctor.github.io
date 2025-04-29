@@ -12,7 +12,7 @@ description: ""
   <div style="font-size: clamp(24px, 4vw, 35px);" class="inline-block min-w-full text-center font-bold whitespace-nowrap">
     Systemic Medicine Doctor
   </div>
-  <div style="font-size: clamp(17px, 4vw, 25px); margin-top: -20px;" class="inline-block min-w-full text-center whitespace-nowrap">
+  <div style="font-size: clamp(17px, 4vw, 25px); margin-top: -20px;line-height: 1.3;" class="inline-block min-w-full text-center whitespace-nowrap">
     为全球加盟SMD医馆赋能的专业人工智能
   </div>
 </div>
