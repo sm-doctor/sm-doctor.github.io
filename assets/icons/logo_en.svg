@@ -1,36 +1,7 @@
-<svg
-   version="1.1"
-   id="svg1"
-   width="560"
-   height="165"
-   viewBox="0 0 560 165"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs1" />
-  <g
-     id="g1">
-    <g
-       id="g19"
-       transform="translate(23.998518)">
-      <path
-         d="m 276.50305,13.000005 a 37.751438,37.751438 0 0 0 -37.75144,37.751438 37.751438,37.751438 0 0 0 0.21199,2.967763 32.088722,32.088722 0 0 1 31.87674,-29.393769 32.088722,32.088722 0 0 1 32.08872,32.088722 32.088722,32.088722 0 0 1 -29.39377,31.876738 37.751438,37.751438 0 0 0 2.96776,0.211984 37.751438,37.751438 0 0 0 37.75144,-37.751438 37.751438,37.751438 0 0 0 -37.75144,-37.751438 z"
-         style="stroke-width:0.439334;fill:currentColor;"
-         id="path18" />
-      <path
-         d="m 230.50705,88.173737 a 37.751438,37.751438 0 0 0 42.41269,-32.426941 37.751438,37.751438 0 0 0 0.18238,-2.969724 32.088722,32.088722 0 0 1 -35.48424,24.919653 32.088722,32.088722 0 0 1 -27.56289,-36.050781 32.088722,32.088722 0 0 1 33.35147,-27.709202 37.751438,37.751438 0 0 0 -2.91367,-0.602623 37.751438,37.751438 0 0 0 -42.41269,32.426936 37.751438,37.751438 0 0 0 32.42695,42.412677 z"
-         style="stroke-width:0.439334;fill:currentColor;"
-         id="path18-4" />
-    </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:43.2699px;font-family:'Nirmala UI';-inkscape-font-specification:'Nirmala UI Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:currentColor;stroke-width:1.8029"
-       x="16.952135"
-       y="144.42171"
-       id="text6"><tspan
-         x="16.952135"
-         y="144.42171"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Nirmala UI';-inkscape-font-specification:'Nirmala UI Bold';stroke-width:1.8029"
-         id="tspan10">Systemic Medicine Doctor</tspan></text>
+<svg width="450" height="55" version="1.1" viewBox="0 0 450 55" xmlns="http://www.w3.org/2000/svg">
+ <g transform="matrix(.90356 0 0 .90356 .7191 -1.4521)">
+  <g transform="translate(0,-3.0791)">
+   <text x="6.4263816" y="45.136829" fill="currentColor" font-family="'Nirmala UI'" font-size="39.636px" font-weight="bold" stroke-width="1.6515" xml:space="preserve">        <tspan x="6.4263816" y="45.136829" fill="currentColor" font-family="'Nirmala UI'" font-weight="bold" stroke-width="1.6515">Systemic Medicine Doctor</tspan> </text>
   </g>
+ </g>
 </svg>

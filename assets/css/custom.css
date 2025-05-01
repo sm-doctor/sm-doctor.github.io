@@ -1,177 +1,166 @@
 
 /* 定义了首页左上角文字LOGO样式 */
 .space-x-3-sm {
-    height: 4.2rem; /* 定义了HEADER LOGO、网站名称、导航栏行度 */
-    align-items: center;
-    font-size: 17px;
-    font-weight: 550;
-    letter-spacing: 0.2px;
+  height: 4.2rem; /* 定义了HEADER LOGO、网站名称、导航栏行度 */
+  align-items: center;
+  font-size: 17px;
+  font-weight: 550;
+  letter-spacing: 0.2px;
 }
-
-
-
-/* 定义与替换了首页中间位置LOGO上下边距 */
-.smd_logo_margin {
-  margin-top: -20px;
-  margin-bottom: -25px;
-}
-
 
 
 /* 定义了首页section导入_index内容区块宽度 */
 .prose-sm {
-  max-width: 100%;
+max-width: 100%;
 }
 
 
 
-
- /* 定义LOGO图标样式 */
- .custom-icon-smlogo{
-  color:inherit; 
-  margin:0px 0px; 
-  font-size:110px;
-  margin-top: -100px;
-  margin-bottom: -35px;
-  text-decoration: none; 
+/* 定义LOGO图标样式 */
+.custom-icon-smlogo{
+color:inherit; 
+margin:0px 0px; 
+font-size:110px;
+margin-top: -80px;
+margin-bottom: -25px;
+text-decoration: none; 
 } 
- 
- 
 
- /* 定义了首页社交媒体图标样式 */
- .custom-icon-sm{
-  color:inherit; 
-  margin:0px 12px; 
-  font-size:28px;
-  text-decoration: none; 
-  transition: color 0.3s ease;
+
+
+/* 定义了首页社交媒体图标样式 */
+.custom-icon-sm{
+color:inherit; 
+margin:0px 12px; 
+font-size:28px;
+text-decoration: none; 
+transition: color 0.3s ease;
 }
 
 
 
 
- /* 定义联系方式样式 */
-  /* 父元素使用 Flexbox 布局 */
-  .custom-contact-parent {
-    display: flex;
-    flex-wrap: wrap;
+/* 定义联系方式样式 */
+/* 父元素使用 Flexbox 布局 */
+.custom-contact-parent {
+  display: flex;
+  flex-wrap: wrap;
 }
 .custom-contact-child1 {
-    /* 子元素占据的宽度 */
-    width: 55%;
-    box-sizing: border-box;
-    padding: 0px;
-    text-align: center;
-}
-.custom-contact-child2 {
   /* 子元素占据的宽度 */
-  width: 0%;
-  box-sizing: border-box;
-  padding: 0px;
-}
-.custom-contact-child3 {
-  /* 子元素占据的宽度 */
-  width: 45%;
+  width: 55%;
   box-sizing: border-box;
   padding: 0px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+.custom-contact-child2 {
+/* 子元素占据的宽度 */
+width: 0%;
+box-sizing: border-box;
+padding: 0px;
+}
+.custom-contact-child3 {
+/* 子元素占据的宽度 */
+width: 45%;
+box-sizing: border-box;
+padding: 0px;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 /* 媒体查询，当屏幕宽度小于 768px 时（一般为手机屏幕），子元素宽度变为 100% */
 @media (max-width: 768px) {
-  .custom-contact-child1  {
-          width: 100%;
-      }
-  .custom-contact-child2  {
+.custom-contact-child1  {
         width: 100%;
     }
-  .custom-contact-child3  {
+.custom-contact-child2  {
       width: 100%;
   }
+.custom-contact-child3  {
+    width: 100%;
+}
 }
 
 
 
- /* 定义表单样式 */
+/* 定义表单样式 */
 .custom-formcontact-container {
-  float: left; 
-  width: 100%;
-  padding: 10px 0px;
-  margin: 0 auto;
+float: left; 
+width: 100%;
+padding: 10px 0px;
+margin: 0 auto;
 }
 /* 输入框样式 */
 .custom-formcontact-input {
-  width: 100%;
-  padding: 8px 20px;
-  margin-bottom: 5px;
-  border: 1px solid #797a7c;
-  border-radius: 20px;
-  background-color: #fff;
-  font-size: 16px;
-  color: #000;
+width: 100%;
+padding: 8px 20px;
+margin-bottom: 5px;
+border: 1px solid #797a7c;
+border-radius: 20px;
+background-color: #fff;
+font-size: 16px;
+color: #000;
 }
 /* 输入框聚焦时的样式 */
 .custom-formcontact-input:focus {
-  outline: none;
-  border-color: #30b6f9;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+outline: none;
+border-color: #30b6f9;
+box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 /* 输入框占位符的样式 */
 .custom-formcontact-input::placeholder {
-  color: #999;
+color: #999;
 }
 /* 文本域样式 */
 .custom-formcontact-textarea {
-  width: 100%;
-  padding: 12px 20px;
-  margin-bottom: 0px;
-  border: 1px solid #797a7c;
-  border-radius: 20px;
-  background-color: #fff;
-  font-size: 16px;
-  color: #000;
-  min-height: 150px;
-  resize: none;
+width: 100%;
+padding: 12px 20px;
+margin-bottom: 0px;
+border: 1px solid #797a7c;
+border-radius: 20px;
+background-color: #fff;
+font-size: 16px;
+color: #000;
+min-height: 150px;
+resize: none;
 }
 /* 文本域聚焦时的样式 */
 .custom-formcontact-textarea:focus {
-  outline: none;
-  border-color: #30b6f9;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+outline: none;
+border-color: #30b6f9;
+box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 /* 文本域占位符的样式 */
 .custom-formcontact-textarea::placeholder {
-  color: #999;
+color: #999;
 }
 /* 按钮样式 */
 .custom-formcontact-button {
-  padding: 5px;
-  width: 100%;
-  border: none;
-  border-radius: 20px;
-  background-color: #154a83;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+padding: 5px;
+width: 100%;
+border: none;
+border-radius: 20px;
+background-color: #154a83;
+color: #fff;
+font-size: 18px;
+cursor: pointer;
+transition: background-color 0.3s ease;
 }
 /* 按钮鼠标悬停时的样式 */
 .custom-formcontact-button:hover {
-  background-color: #2487f0;
+background-color: #2487f0;
 }
 /* 按钮点击时的样式 */
 .custom-formcontact-button:active {
-  background-color: #004085;
+background-color: #004085;
 }
 
 
 /* 替换了LIST文章CARD底部高度(例如首页heading下) */
 .pt-4 {
-  padding-top: 0rem;
+padding-top: 0rem;
 }
-
 
 
 
