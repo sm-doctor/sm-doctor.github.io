@@ -1,9 +1,9 @@
-<div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px" class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
+<div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px" class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3 whitespace-nowrap">
     {{ if .Site.Params.Logo }}
     {{ $logo := resources.Get .Site.Params.Logo }}
     {{ if $logo }}
     <div>
-        <a href="{{ "" | relLangURL }}" class="flex">
+            <a href="{{ "" | relLangURL }}" class="flex">            
             <span class="sr-only">{{ .Site.Title | markdownify }}</span>
 
             {{ if eq $logo.MediaType.SubType "svg" }}
@@ -23,9 +23,7 @@
         <nav class="flex space-x-3-sm">
 
             {{ if not .Site.Params.disableTextInHeader | default true }}
-            <a href="{{ "" | relLangURL }}" class="font-medium-sm text-gray-500 hover:text-gray-900">{{
-                .Site.Title | markdownify
-                }}</a>
+            <a href="{{ "" | relLangURL }}" class="font-medium-sm text-gray-500 hover:text-gray-900 whitespace-nowrap">{{ .Site.Title | markdownify }}</a>
             {{ end }}
 
         </nav>
