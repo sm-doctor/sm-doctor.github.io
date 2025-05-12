@@ -15,7 +15,6 @@ showComments: false
 ---
 
 
-# 通过WEB3进行国际化股权融资：STO流程与案例分析
 
 ## 概述
 
