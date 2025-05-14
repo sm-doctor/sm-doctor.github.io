@@ -14,6 +14,9 @@ sharingLinks: false
 showComments: false
 ---
 
+{{< smd_preface "article.smd_preface" >}}
+
+
 产学研合作是产业界、学术界（高校、科研机构）与政府等多方协同创新的一种模式，旨在通过资源整合与优势互补，推动技术研发、成果转化和人才培养。以下通过不同领域的实际案例，解析其核心概念与典型模式：
 
 ---
