@@ -14,6 +14,7 @@ sharingLinks: false
 showComments: false
 ---
 
+{{< smd_preface "article.smd_preface" >}}
 
 ## 一、关键点
 
