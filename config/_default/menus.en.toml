@@ -33,17 +33,6 @@ name = "Blog"
 pageRef = "Blog"
 weight = 5
 
-[[main]]
-pre = "github"
-url = "https://github.com/sm-doctor/"
-weight = 8
-
-[[main]]
-pre = "huggingface"
-url = "https://huggingface.co/sm-doctor/"
-identifier = "lFYGCNdVwP"
-weight = 9
-
 
 [[footer]]
 name = "Tags"

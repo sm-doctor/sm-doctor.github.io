@@ -33,17 +33,6 @@ name = "聯絡"
 pageRef = "Contact"
 weight = 7
 
-[[main]]
-pre = "github"
-url = "https://github.com/sm-doctor/"
-weight = 8
-
-[[main]]
-pre = "huggingface"
-url = "https://huggingface.co/sm-doctor/"
-identifier = "lFYGCNdVwP"
-weight = 9
-
 
 [[footer]]
   name = "標簽導航"
