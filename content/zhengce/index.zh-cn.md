@@ -1,5 +1,5 @@
 ---
-title: "“健康中国”战略与“中医文化“复兴国策"
+title: "“健康中国”国策与中医文化复兴战略"
 date: 2025-01-01
 draft: false
 description: ""
