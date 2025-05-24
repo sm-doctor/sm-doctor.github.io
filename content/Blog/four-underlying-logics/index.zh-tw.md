@@ -1,5 +1,5 @@
 ---
-title: "..."
+title: "第一篇博客"
 date: 2025-01-01
 weight: 35
 draft: false

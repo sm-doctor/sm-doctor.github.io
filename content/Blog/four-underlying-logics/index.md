@@ -1,5 +1,5 @@
 ---
-title: "..."
+title: "The First Blog"
 date: 2025-01-01
 weight: 35
 draft: false
