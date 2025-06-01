@@ -12,7 +12,7 @@ description: ""
   <div style="font-size: clamp(24px, 4vw, 35px); line-height: 1; white-space: nowrap;" class="inline-block min-w-full text-center font-bold">
     Systemic Medicine Doctor
   </div>
-  <div style="font-size: clamp(17px, 4vw, 25px); margin-top: 0px; line-height: 1; white-space: nowrap;" class="inline-block min-w-full text-center whitespace-nowrap">
+  <div style="font-size: clamp(17px, 4vw, 30px); margin-top: 0px; line-height: 1; white-space: nowrap;" class="inline-block min-w-full text-center whitespace-nowrap">
     健康的第一性原理 & 人類健康計劃
   </div>
 </div>
