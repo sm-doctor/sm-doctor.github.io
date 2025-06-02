@@ -1,5 +1,5 @@
 ---
-title: "一、第一性原理疗愈哲学"
+title: "一、第一性原理健康哲学"
 date: 2025-01-01
 externalUrl: "whitepaper/smd-methodology/#1"
 draft: false
