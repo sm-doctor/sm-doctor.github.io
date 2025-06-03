@@ -15,7 +15,7 @@ title = "SM.DOCTOR"
 
 [params.author]
   image = "/img/logo3.png" #首页中心LOGO与文章页作者LOGO 
-  # name = "Systemic Medicine Doctor" #首页中间LOGO下名称
+  name = "Systemic Medicine Doctor" #首页中间LOGO下名称
   headline = "Professional Artificial Intelligence Empowering Global Affiliated Medical Institutions"   #首页标语
   bio = "SMD Evidence-Based Medicine: Theory & Application."   #文章页LOGO下说明标语
   links = [
