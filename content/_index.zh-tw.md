@@ -13,7 +13,7 @@ description: ""
     Systemic Medicine Doctor
   </div>
   <div style="font-size: clamp(18.5px, 4vw, 28.5px); margin-top: 5px; line-height: 1; white-space: nowrap;" class="inline-block min-w-full text-center whitespace-nowrap">
-    人類健康計劃：系統療法的理論與實踐
+    人類健康計劃：系統療法的理論與應用
   </div>
 </div>
 

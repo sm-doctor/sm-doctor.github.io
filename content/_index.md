@@ -12,7 +12,7 @@ description: ""
 </div>
 
 
-<div style="line-height: 1.3; margin-top:0px; margin-bottom:15px;">Human Health Initiative: Theoretical Practice of Systemic Medicine</div>
+<div style="line-height: 1.3; margin-top:0px; margin-bottom:15px;">Human Health Initiative: Theory and Application of Systemic Medicine</div>
 
 
 <div style="width: 100%; text-align: center; background-color: rgba(4, 18, 1, 0.4); padding: 10px; margin-top: 15px; margin-bottom: 7px; border-radius: 20px; letter-spacing: 0px; 
