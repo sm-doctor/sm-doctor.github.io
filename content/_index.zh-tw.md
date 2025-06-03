@@ -9,17 +9,17 @@ description: ""
 
 
 <div class="w-full overflow-x-auto">
-  <div style="font-size: clamp(24px, 4vw, 35px); line-height: 1; white-space: nowrap;" class="inline-block min-w-full text-center font-bold">
+  <div style="font-size: clamp(23px, 4vw, 35px); line-height: 1; white-space: nowrap;" class="inline-block min-w-full text-center font-bold">
     Systemic Medicine Doctor
   </div>
-  <div style="font-size: clamp(17px, 4vw, 30px); margin-top: 5px; line-height: 1; white-space: nowrap;" class="inline-block min-w-full text-center whitespace-nowrap">
+  <div style="font-size: clamp(19.5px, 4vw, 30px); margin-top: 5px; line-height: 1; white-space: nowrap;" class="inline-block min-w-full text-center whitespace-nowrap">
     健康的第一性原理 & 人類健康計劃
   </div>
 </div>
 
 
 <div style="width: 100%; text-align: center; background-color: rgba(4, 18, 1, 0.4); padding: 1px; margin-top: 15px; margin-bottom: 7px; border-radius: 20px; letter-spacing: 1.5px; 
-color:inherit; line-height: 2; opacity: 0.5;">--- SMD項目的三大底層邏輯 ---</div>
+color:inherit; line-height: 2; opacity: 0.5;">--- SMD項目三大底層邏輯 ---</div>
 
 <div style="width: 100%; text-align: left;">{{< list cardView=true limit=3 where="Type" value="sample" >}}</div>
 
