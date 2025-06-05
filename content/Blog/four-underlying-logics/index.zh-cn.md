@@ -1,5 +1,5 @@
 ---
-title: "疾病疗愈的四种类型与底层逻辑"
+title: "医疗的四个底层逻辑"
 date: 2025-01-01
 weight: 
 draft: false
