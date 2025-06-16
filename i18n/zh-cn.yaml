@@ -44,7 +44,7 @@ footer:
   light_appearance: "切换为浅色模式"
   powered_by: "由 {{ .Hugo }} &amp; {{ .Theme }} 强力驱动"
   copyright_info: "版权所有"
-  copyright_info1: "天人合一科学实验室"
+  copyright_info1: "深圳炎黄健康科技有限公司"
 
 list:
   externalurl_title: "链接到外部网站"

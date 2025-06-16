@@ -1,7 +1,7 @@
 ---
 title: "医与养的四个底层逻辑"
 date: 2025-01-01
-weight: 
+weight: 2
 draft: false
 description: ""
 tags: ["方法论","系统疗法","整合疗法","第一性原理"]
