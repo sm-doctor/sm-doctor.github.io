@@ -2,7 +2,7 @@ disabled = false
 languageCode = "zh-cn"  #文字编码
 languageName = "简体中文"  #多语言显示名称
 weight = 2
-title = "SMD人类健康计划"
+title = "SM.DOCTOR"
 
 [params]
   displayName = "简体中文"
