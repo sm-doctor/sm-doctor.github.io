@@ -1,5 +1,5 @@
 ---
-title: "医养产业升级的三大途径"
+title: "大健康医养产业升级的三大途径"
 date: 2025-01-01
 weight: 1
 draft: false
