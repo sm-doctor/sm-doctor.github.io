@@ -11,7 +11,7 @@ title = "SM.DOCTOR"
   dateFormat = "2 January 2006"
   # logo = "logo1.png" #夜晚模式首页左上角LOGO
   # secondaryLogo = "logo2.png" #白天模式首页左上角LOGO
-  description = "人类健康计划 — 健康哲学、健康的第一性原理、健康系统工程方法论、医养一体化方法、大健康产业生态构建。"
+  description = "人类健康计划 — 系统医疗的理论与应用"
 
 [params.author]
   image = "/img/logo3.png" #首页中心LOGO
