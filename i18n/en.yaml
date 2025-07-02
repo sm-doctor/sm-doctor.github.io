@@ -1,5 +1,6 @@
 global:
   language: "EN"
+  SMD_HHI: " - Human Health Initiative"
 
 article:
   anchor_label: "Anchor"

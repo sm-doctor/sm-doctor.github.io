@@ -1,5 +1,6 @@
 global:
   language: "繁體中文"
+  SMD_HHI: " - 人類健康計劃"
 
 article:
   anchor_label: "定位點"
