@@ -1,5 +1,6 @@
 global:
   language: "简体中文"
+  SMDHHI: " —— 人类健康计划"
 
 article:
   anchor_label: "锚点"
