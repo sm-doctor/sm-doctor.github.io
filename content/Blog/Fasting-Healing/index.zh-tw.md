@@ -2,7 +2,7 @@
 title: " "
 date: 2025-01-01
 weight: 
-draft: false
+draft: true
 description: ""
 tags: ["動機篇","願景篇"]
 showViews: false

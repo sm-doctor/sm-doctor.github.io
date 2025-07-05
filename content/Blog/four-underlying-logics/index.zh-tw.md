@@ -2,7 +2,7 @@
 title: "第一篇博客"
 date: 2025-01-01
 weight: 35
-draft: false
+draft: true
 description: ""
 tags: ["動機篇","願景篇"]
 showViews: false

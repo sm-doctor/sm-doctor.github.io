@@ -2,7 +2,7 @@
 title: "The First Blog"
 date: 2025-01-01
 weight: 35
-draft: false
+draft: true
 description: ""
 tags: ["Motivation Section", "Vision Section"]
 showViews: false
