@@ -1,5 +1,5 @@
 ---
-title: "二、健康工程方法论"
+title: "二、健康系统工程方法论"
 date: 2025-01-01
 externalUrl: "whitepaper/smd-methodology/#2"
 draft: false

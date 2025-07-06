@@ -7,15 +7,13 @@ description: ""
 
 <div class="custom-icon-smlogo">{{< icon "logo" >}}</div>
 
-
-<div class="w-full overflow-x-auto">
-  <div style="font-size: clamp(23px, 4vw, 35px); line-height: 1; white-space: nowrap;" class="inline-block min-w-full text-center font-bold">
-    Systemic Medicine Doctor
-  </div>
-  <div style="font-size: clamp(17.5px, 4vw, 27px); margin-top: 5px; line-height: 1; white-space: nowrap;" class="inline-block min-w-full text-center whitespace-nowrap">
-    人类健康计划：系统疗法的理论与应用
-  </div>
+<div style="font-size: clamp(23px, 4vw, 35px); line-height: 1; white-space: nowrap;" class="inline-block min-w-full text-center font-bold">
+  Systemic Medicine Doctor
 </div>
+<div style="font-size: clamp(17.5px, 4vw, 27px); margin-top: 5px; line-height: 1; white-space: nowrap;" class="inline-block min-w-full text-center whitespace-nowrap">
+  人类健康计划：系统疗法的理论与应用
+</div>
+
 
 
 
