@@ -1,5 +1,5 @@
 ---
-title: "药物疗法与食物疗法的中医哲学"
+title: "药疗与食疗如何使用的中医哲学"
 date: 2025-01-01
 weight: 
 draft: false
