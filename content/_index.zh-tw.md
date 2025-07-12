@@ -12,7 +12,7 @@ description: ""
   <div style="font-size: clamp(23px, 4vw, 35px); line-height: 1; white-space: nowrap;" class="inline-block min-w-full text-center font-bold">
     Systemic Medicine Doctor
   </div>
-  <div style="font-size: clamp(17.5px, 4vw, 27px); margin-top: 5px; line-height: 1; white-space: nowrap;" class="inline-block min-w-full text-center whitespace-nowrap">
+  <div style="font-size: clamp(17.5px, 3vw, 27px); margin-top: 5px; line-height: 1; white-space: nowrap;" class="inline-block min-w-full text-center whitespace-nowrap">
     人類健康計劃：系統療法的理論與應用
   </div>
 </div>
@@ -29,5 +29,4 @@ color:inherit; line-height: 2; opacity: 0.5;">--- SMD項目三大底層邏輯 --
   <a href="#" target="_blank" class="custom-icon-sm">{{< icon "facebook" >}}</a>
   <a href="#" target="_blank" class="custom-icon-sm">{{< icon "instagram" >}}</a>
   <a href="#" target="_blank" class="custom-icon-sm">{{< icon "telegram" >}}</a>
-  <a href="#" target="_blank" class="custom-icon-sm">{{< icon"github" >}}</a>
 </div>

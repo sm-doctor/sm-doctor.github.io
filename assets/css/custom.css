@@ -20,8 +20,8 @@ max-width: 100%;
 .custom-icon-smlogo{
 color:inherit; 
 margin:0px 0px; 
-font-size: 95px;
-margin-top: -50px;
+font-size: clamp(65px, 11vw, 95px); 
+margin-top: -40px;
 margin-bottom: -10px;
 text-decoration: none; 
 } 

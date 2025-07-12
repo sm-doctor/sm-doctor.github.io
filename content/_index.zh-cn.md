@@ -10,7 +10,7 @@ description: ""
 <div style="font-size: clamp(23px, 4vw, 35px); line-height: 1; white-space: nowrap;" class="inline-block min-w-full text-center font-bold">
   Systemic Medicine Doctor
 </div>
-<div style="font-size: clamp(17.5px, 4vw, 27px); margin-top: 5px; line-height: 1; white-space: nowrap;" class="inline-block min-w-full text-center whitespace-nowrap">
+<div style="font-size: clamp(17.5px, 3vw, 27px); margin-top: 5px; line-height: 1; white-space: nowrap;" class="inline-block min-w-full text-center whitespace-nowrap">
   人类健康计划：系统疗法的理论与应用
 </div>
 
@@ -30,7 +30,7 @@ xhsshare=WeixinSession&appuid=5d423fc90000000016034bc6&apptime=1741686168&share_
 class="custom-icon-sm">{{< icon "redbook" >}}</a>
 <a href="https://zhihu.com/people/nscm/" target="_blank" class="custom-icon-sm">{{< icon "zhihu" >}}</a>
 <a href="https://weibo.com/jincijiayuan/" target="_blank" class="custom-icon-sm">{{< icon "xinlangweibo" >}}</a>
-<a href="mailto:ohulab.org@gmail.com" target="_blank" class="custom-icon-sm">{{< icon "email" >}}</a>
+
 </div>
 
 

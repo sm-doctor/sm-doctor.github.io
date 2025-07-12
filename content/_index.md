@@ -28,5 +28,5 @@ color:inherit; line-height: 1.2; opacity: 0.5;">SMD Project's three core foundat
   <a href="#" target="_blank" class="custom-icon-sm">{{< icon "facebook" >}}</a>
   <a href="#" target="_blank" class="custom-icon-sm">{{< icon "instagram" >}}</a>
   <a href="#" target="_blank" class="custom-icon-sm">{{< icon "telegram" >}}</a>
-  <a href="#" target="_blank" class="custom-icon-sm">{{< icon "github" >}}</a>
+
 </div>
