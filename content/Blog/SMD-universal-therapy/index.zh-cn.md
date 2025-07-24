@@ -4,7 +4,7 @@ date: 2025-07-24
 weight: 
 draft: false
 description: ""
-tags: ["SMD通用标准化疗法","SMD未来医疗"]
+tags: ["SMD通用疗法","SMD未来医疗"]
 showViews: false
 showLikes: false
 showAuthor: true
