@@ -4,7 +4,7 @@ date: 2025-01-01
 draft: false
 weight: 60
 description: "SMD療養中心"
-tags: ["SMD完全體"]
+tags: ["SMD完全體","項目"]
 showViews: false
 showLikes: false
 showAuthor: true

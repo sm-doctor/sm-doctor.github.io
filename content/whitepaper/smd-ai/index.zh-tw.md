@@ -4,7 +4,7 @@ date: 2025-01-05
 draft: false
 weight: 40
 description: "SM.DOCTOR人工智慧"
-tags: ["系統療法", "診療AI"]
+tags: ["系統療法", "診療AI","項目"]
 showViews: false
 showLikes: false
 showAuthor: true

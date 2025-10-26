@@ -4,7 +4,7 @@ date: 2025-01-01
 draft: false
 weight: 50
 description: "SMD Systemic Therapy Integrated Medical Treatment and Health Preservation Center"
-tags: ["Physician Coach", "SMD Physician", "SMD Coach", "Intelligent Diagnosis and Treatment"]
+tags: ["Physician Coach", "SMD Physician", "SMD Coach", "Intelligent Diagnosis and Treatment","Projects"]
 showViews: false
 showLikes: false
 showAuthor: true

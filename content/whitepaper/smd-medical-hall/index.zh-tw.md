@@ -4,7 +4,7 @@ date: 2025-01-01
 draft: false
 weight: 50
 description: "SMD系統療法醫養一體化醫療養生館"
-tags: ["醫師教練", "SMD醫師", "SMD教練", "智能診療"]
+tags: ["醫師教練", "SMD醫師", "SMD教練", "智能診療","項目"]
 showViews: false
 showLikes: false
 showAuthor: true

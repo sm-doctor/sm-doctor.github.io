@@ -4,7 +4,7 @@ date: 2025-01-01
 draft: false
 weight: 80
 description: "SMD New Chinese Medicine University and the Belt and Road Initiative for Chinese Medicine Culture"
-tags: ["Vision", "Method", "Physician Coach"]
+tags: ["Method", "Physician Coach","Projects"]
 showViews: false
 showLikes: false
 showAuthor: true

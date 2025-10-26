@@ -5,17 +5,17 @@ weight = 1
 
 [[main]]
 name = "願景"
-pageRef = "Tags/願景篇"
+pageRef = "whitepager"
 weight = 2
 
 [[main]]
-name = "動機"
-pageRef = "smd-origin"
+name = "方法論"
+pageRef = "smd-methodology"
 weight = 3
 
 [[main]]
-name = "方法"
-pageRef = "whitepaper"
+name = "項目"
+pageRef = "Tags/項目"
 weight = 4
 
 [[main]]
@@ -24,14 +24,9 @@ pageRef = "Blog"
 weight = 5
 
 [[main]]
-name = "加盟"
-pageRef = "Contact"
-weight = 6
-
-[[main]]
 name = "聯絡"
 pageRef = "Contact"
-weight = 7
+weight = 6
 
 
 [[footer]]

@@ -5,17 +5,17 @@ weight = 1
 
 [[main]]
 name = "愿景"
-pageRef = "Tags/愿景篇"
+pageRef = "whitepaper"
 weight = 2
 
 [[main]]
-name = "动机"
-pageRef = "smd-origin"
+name = "方法论"
+pageRef = "smd-methodology"
 weight = 3
 
 [[main]]
-name = "方法"
-pageRef = "whitepaper"
+name = "项目"
+pageRef = "Tags/项目"
 weight = 4
 
 [[main]]
@@ -24,20 +24,15 @@ pageRef = "Blog"
 weight = 5
 
 [[main]]
-name = "加盟"
-pageRef = "Contact"
-weight = 6
-
-[[main]]
 name = "联系"
 pageRef = "Contact"
-weight = 7
+weight = 6
 
 
 
 [[footer]]
-  name = "标签导航"
-  pageRef = "Tags"
+  name = "社交媒体"
+  pageRef = "#"
   weight = 21
 
 [[footer]]
@@ -51,6 +46,11 @@ pageRef = "Legal"
 weight = 23
 
 [[footer]]
+  name = "标签导航"
+  pageRef = "Tags"
+  weight = 24
+
+[[footer]]
 name = "网站架构"
 pageRef = "WebsiteStack"
-weight = 24
+weight = 25

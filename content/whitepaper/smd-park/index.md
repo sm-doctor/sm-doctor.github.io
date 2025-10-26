@@ -4,7 +4,7 @@ date: 2025-01-01
 draft: false
 weight: 70
 description: "SMD New Medical and Health Care Model: Inexpensive Medical Care"
-tags: ["Vision", "Methodology"]
+tags: ["Methodology","Projects"]
 showViews: false
 showLikes: false
 showAuthor: true

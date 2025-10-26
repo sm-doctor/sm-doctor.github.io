@@ -4,7 +4,7 @@ date: 2025-01-01
 weight: 35
 draft: false
 description: ""
-tags: ["Motivation Section", "Vision Section"]
+tags: ["Motivation Section", "Vision Section","Projects"]
 showViews: false
 showLikes: false
 showAuthor: true

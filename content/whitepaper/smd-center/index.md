@@ -4,7 +4,7 @@ date: 2025-01-01
 draft: false
 weight: 60
 description: "SMD Rehabilitation Center"
-tags: ["SMD Complete Form"]
+tags: ["SMD Complete Form","Projects"]
 showViews: false
 showLikes: false
 showAuthor: true

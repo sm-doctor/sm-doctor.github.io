@@ -4,7 +4,7 @@ date: 2025-01-01
 draft: false
 weight: 40
 description: "SM.DOCTOR Artificial Intelligence"
-tags: ["Smart Diagnosis","Vision","Approach"]
+tags: ["Smart Diagnosis","Approach","Projects"]
 showViews: false
 showLikes: false
 showAuthor: true

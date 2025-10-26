@@ -5,33 +5,31 @@ weight = 1
 
 [[main]]
 name = "Vision"
-pageRef = "Tags/Vision"
+pageRef = "whitepaper"
 weight = 2
 
 [[main]]
-name = "Motivation"
-pageRef = "smd-origin"
+name = "Methodology"
+pageRef = "smd-methodology"
 weight = 3
 
 [[main]]
-name = "Approach"
-pageRef = "whitepaper"
+name = "projects"
+pageRef = "Tags/projects"
 weight = 4
-
-[[main]]
-name = "Contact"
-pageRef = "Contact"
-weight = 7
-
-[[main]]
-name = "Franchise"
-pageRef = "Contact"
-weight = 6
 
 [[main]]
 name = "Blog"
 pageRef = "Blog"
 weight = 5
+
+[[main]]
+name = "Contact"
+pageRef = "Contact"
+weight = 6
+
+
+
 
 
 [[footer]]

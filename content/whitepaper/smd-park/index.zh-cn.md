@@ -4,7 +4,7 @@ date: 2025-01-01
 draft: false
 weight: 70
 description: "SMD新型医养模式：廉价医疗"
-tags: ["愿景篇", "方法篇"]
+tags: ["项目"]
 showViews: false
 showLikes: false
 showAuthor: true

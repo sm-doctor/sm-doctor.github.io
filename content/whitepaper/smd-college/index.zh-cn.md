@@ -4,7 +4,7 @@ date: 2025-01-01
 draft: false
 weight: 80
 description: "SMD新型中医大学与中医文化一带一路计划"
-tags: ["愿景篇", "方法篇","SMD医师教练"]
+tags: ["方法篇","SMD医师教练","项目"]
 showViews: false
 showLikes: false
 showAuthor: true

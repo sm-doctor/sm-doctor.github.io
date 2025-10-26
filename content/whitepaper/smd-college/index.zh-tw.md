@@ -4,7 +4,7 @@ date: 2025-01-01
 draft: false
 weight: 80
 description: "SMD新型中醫大學與中醫文化一帶一路計劃"
-tags: ["願景", "方法","醫師教練"]
+tags: ["醫師教練","項目"]
 showViews: false
 showLikes: false
 showAuthor: true

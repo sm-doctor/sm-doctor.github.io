@@ -3,8 +3,8 @@ title: "SMD医馆"
 date: 2025-01-01
 draft: false
 weight: 50
-description: "SMD系统疗法医养一体化医疗养生馆"
-tags: ["SMD医师教练","SMD医师","SMD教练","智能诊疗"]
+description: "SMD系统疗法医养一体化医疗会所"
+tags: ["SMD医师教练","SMD医师","SMD教练","智能诊疗","项目"]
 showViews: false
 showLikes: false
 showAuthor: true

@@ -4,7 +4,7 @@ date: 2025-01-05
 draft: false
 weight: 40
 description: "SM.DOCTOR人工智能"
-tags: ["智能诊疗","愿景篇","方法篇"]
+tags: ["智能诊疗","方法篇","项目"]
 showViews: false
 showLikes: false
 showAuthor: true
