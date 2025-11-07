@@ -12,7 +12,7 @@ description: ""
 <div style="display: flex; justify-content: center; align-items: center;">
   <div id="heading-container" style="width: 350px; text-align: justify; text-align-last: justify; -moz-text-align-last: justify; text-justify: inter-ideograph; max-width: 100%; box-sizing: border-box;">
    <span style="font-weight: bold; font-size: clamp(18px, 5vw, 26.5px); display: block; text-align: center; text-align-last: justify; line-height: 130%;">Systemic Medicine Doctor</span>
-   <span style="font-size: clamp(12px, 3vw, 16px); display: block; text-align: center; text-align-last: justify; line-height: 130%;">Theory and Application of Systemic Medicine</span>
+   <span style="font-size: clamp(12px, 3vw, 16px); display: block; text-align: center; text-align-last: justify; line-height: 130%; white-space: nowrap;">Theory and Application of Systemic Medicine</span>
   </div>
 </div>
 <style>
