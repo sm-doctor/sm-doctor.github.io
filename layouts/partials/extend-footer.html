@@ -1,0 +1,15 @@
+<!-- 自定义JavaScript扩展，修复stopPropagation错误 -->
+<script>
+  // 覆盖原始的closeMenu函数，添加参数检查
+  if (typeof closeMenu === 'function') {
+    const originalCloseMenu = closeMenu;
+    closeMenu = function(e) {
+      // 只有当e参数存在且有stopPropagation方法时才调用
+      if (e && typeof e.stopPropagation === 'function') {
+        e.stopPropagation();
+      }
+      // 调用原始函数完成其他操作
+      originalCloseMenu.apply(this, arguments);
+    };
+  }
+</script>

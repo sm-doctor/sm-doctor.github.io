@@ -45,7 +45,7 @@ footer:
   light_appearance: "切換為淺色模式"
   powered_by: "以 {{ .Hugo }} &amp; {{ .Theme }} 製作"
   copyright_info: "版權所有"
-  copyright_info1: "天人合一科學實驗室"
+  copyright_info1: "深圳炎黃健康科技有限公司"
 
 list:
   externalurl_title: "外部網站連結"
@@ -69,7 +69,7 @@ sharing:
   twitter: "推到 Twitter"
 
 shortcode:
-  recent_articles: "『人類健康計劃』項目白皮書"
+  recent_articles: "『人類健康計劃』項目網誌"
 
 recent:
   show_more: "項目網誌"

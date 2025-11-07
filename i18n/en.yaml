@@ -55,7 +55,7 @@ footer:
   light_appearance: "Switch to light appearance"
   powered_by: "Powered by {{ .Hugo }} &amp; {{ .Theme }}"
   copyright_info: "Copyright"
-  copyright_info1: "OHULAB"
+  copyright_info1: "YHHT Co., Ltd."
 
 list:
   externalurl_title: "Link to external site"
@@ -82,7 +82,7 @@ sharing:
   telegram: "Share via Telegram"
 
 shortcode:
-  recent_articles: "『Human Health Initiative』Project White Paper"
+  recent_articles: "『Human Health Initiative』Project Blog"
 
 recent:
   show_more: "Project Blog"

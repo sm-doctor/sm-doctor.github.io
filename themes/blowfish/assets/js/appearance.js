@@ -102,10 +102,24 @@ var getTargetAppearance = () => {
   return document.documentElement.classList.contains("dark") ? "dark" : "light"
 }
 
-window.addEventListener("DOMContentLoaded", (event) => {
+function updateScrollerVisibility() {
   const scroller = document.getElementById("top-scroller");
   const footer = document.getElementById("site-footer");
-  if(scroller && footer && scroller.getBoundingClientRect().top > footer.getBoundingClientRect().top) {
-    scroller.hidden = true;
+  if(scroller && footer) {
+    // 检查是否为首页
+    const isHomepage = window.location.pathname === '/' || 
+                      window.location.pathname === '/zh-cn/' || 
+                      window.location.pathname === '/zh-tw/';
+    
+    if (isHomepage) {
+      // 首页始终隐藏滚动箭头（为了避免首页出现滚动条）
+      scroller.hidden = true;
+    } else {
+      // 非首页简化逻辑，直接显示箭头
+      scroller.hidden = false;
+    }
   }
-});
+}
+
+window.addEventListener("DOMContentLoaded", updateScrollerVisibility);
+window.addEventListener("scroll", updateScrollerVisibility);

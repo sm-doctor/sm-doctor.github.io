@@ -9,24 +9,88 @@ pageRef = "whitepaper"
 weight = 2
 
 [[main]]
-name = "方法论"
-pageRef = "smd-methodology"
+name = "理论"
 weight = 3
+
+  [[main]]
+  name = "SMD方法论"
+  parent = "理论"
+  pageRef = "smd-methodology"
+  weight = 31
+  
+  [[main]]
+  name = "SMD系统疗法"
+  parent = "理论"
+  pageRef = "wiki"
+  weight = 32
+      
+  [[main]]
+  name = "HHI项目百科"
+  parent = "理论"
+  url = "https://github.com/sm-doctor/sm-doctor.github.io/wiki/"
+  weight = 33
 
 [[main]]
 name = "项目"
-pageRef = "Tags/项目"
-weight = 4
+weight = 5
+
+  [[main]]
+  name = "1、训练营计划"
+  parent = "项目"
+  weight = 51
+  pageRef = "/whitepaper/smd-club/"
+  
+  [[main]]
+  name = "2、SMD·AI人工智能"
+  parent = "项目"
+  weight = 52
+  pageRef = "/whitepaper/smd-ai/"
+  
+  [[main]]
+  name = "3、连锁医馆"
+  parent = "项目"
+  weight = 53
+  pageRef = "/whitepaper/smd-medical-hall/"
+  
+  [[main]]
+  name = "4、疗养中心"
+  parent = "项目"
+  weight = 54
+  pageRef = "/whitepaper/smd-center/"
+  
+  [[main]]
+  name = "5、大健康产业园"
+  parent = "项目"
+  weight = 55
+  pageRef = "/whitepaper/smd-park/"
+  
+  [[main]]
+  name = "6、社区康养综合体"
+  parent = "项目"
+  weight = 56
+  pageRef = ""
+  
+  [[main]]
+  name = "7、国际生命健康学院"
+  parent = "项目"
+  weight = 57
+  pageRef = "/whitepaper/smd-college/"
 
 [[main]]
 name = "博客"
 pageRef = "Blog"
-weight = 5
+weight = 6
 
 [[main]]
 name = "联系"
 pageRef = "Contact"
-weight = 6
+weight = 7
+
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/sm-doctor/"
+  weight = 8
 
 
 
@@ -46,11 +110,6 @@ pageRef = "Legal"
 weight = 23
 
 [[footer]]
-  name = "标签导航"
-  pageRef = "Tags"
-  weight = 24
-
-[[footer]]
 name = "网站架构"
 pageRef = "WebsiteStack"
-weight = 25
+weight = 24

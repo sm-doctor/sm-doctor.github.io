@@ -1,4 +1,7 @@
 
+
+
+
 /* 定义了首页左上角文字LOGO样式 */
 .space-x-3-sm {
   height: 4.2rem; /* 定义了HEADER LOGO、网站名称、导航栏行度 */
@@ -8,25 +11,10 @@
   letter-spacing: 0.2px;
 }
 
-
 /* 定义了首页section导入_index内容区块宽度 */
 .prose-sm {
 max-width: 100%;
 }
-
-
-
-/* 定义LOGO图标样式 */
-.custom-icon-smlogo{
-color:inherit; 
-margin:0px 0px; 
-font-size: clamp(65px, 11vw, 95px); 
-margin-top: -40px;
-margin-bottom: -10px;
-text-decoration: none; 
-} 
-
-
 
 /* 定义了首页社交媒体图标样式 */
 .custom-icon-sm{
@@ -37,15 +25,13 @@ text-decoration: none;
 transition: color 0.3s ease;
 }
 
-
-
-
 /* 定义联系方式样式 */
 /* 父元素使用 Flexbox 布局 */
 .custom-contact-parent {
   display: flex;
   flex-wrap: wrap;
 }
+
 .custom-contact-child1 {
   /* 子元素占据的宽度 */
   width: 55%;
@@ -82,9 +68,7 @@ align-items: center;
 }
 }
 
-
-
-/* 定义表单样式 */
+/* 定义联系方式表单样式 */
 .custom-formcontact-container {
 float: left; 
 width: 100%;
@@ -141,7 +125,7 @@ padding: 5px;
 width: 100%;
 border: none;
 border-radius: 20px;
-background-color: #154a83;
+background-color: #000;
 color: #fff;
 font-size: 18px;
 cursor: pointer;
@@ -149,13 +133,14 @@ transition: background-color 0.3s ease;
 }
 /* 按钮鼠标悬停时的样式 */
 .custom-formcontact-button:hover {
-background-color: #2487f0;
+background-color: #296a29;
+border: none;
 }
 /* 按钮点击时的样式 */
 .custom-formcontact-button:active {
-background-color: #004085;
+background-color: #1a3b1a;
+border: none;
 }
-
 
 /* 替换了LIST文章CARD底部高度(例如首页heading下) */
 .pt-4 {
@@ -166,3 +151,120 @@ padding-top: 0rem;
 
 
 
+/* 定义了首页诊询按钮样式 */
+/* 首页诊询文本框与按钮区域外壳样式 */
+.zhenxun {
+display: flex;
+justify-content: space-between; /* 文本框与按钮两端对齐 */
+margin: 15px auto 10px; /* 上，左右，下外边距 */
+width: clamp(100%, 50vw, 600px);
+align-items: center;
+border: 2px solid #000; /* 添加正常模式的边框 */
+border-radius: 30px;
+overflow: hidden;
+padding: 0px 0px;
+font-family: 'Noto Sans SC', sans-serif;
+}
+
+/* 手动切换的暗黑模式边框颜色 */
+.dark .zhenxun {
+  border: 1px solid rgb(246, 249, 247) ;
+}
+
+/* 系统设置的暗黑模式边框颜色 */
+@media (prefers-color-scheme: dark) {
+  .zhenxun {
+    border: 2px solid rgb(5, 14, 7);
+  }
+}
+/* 首页诊询文本框样式 */
+.zhenxun-input {
+width: 75%;
+height: 45px;
+padding: 10px 20px;
+color: inherit !important;
+font-size: 16px;
+border: 1px solid transparent;
+background-color: transparent;
+outline: none;
+}
+/* 输入框聚焦时的样式 */
+.zhenxun-input:focus {
+border: 1px solid transparent !important;
+background-color: transparent !important;
+outline: none !important;
+box-shadow: none !important; 
+}
+/* 增加选择器优先级，确保覆盖其他框架或浏览器默认样式 */
+/* 针对浏览器自动完成功能的样式  WebKit浏览器 (Chrome, Safari等) */
+.zhenxun-input:-webkit-autofill {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: inherit !important;
+  background-color: transparent !important;
+  border: 1px solid transparent !important;
+  box-shadow: 0 0 0 1000px transparent inset !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+/* Firefox浏览器 */
+.zhenxun-input:-moz-autofill {
+  background-color: transparent !important;
+  border: 1px solid transparent !important;
+  color: inherit !important;
+}
+/* 通用样式增强，确保下拉选择时样式一致 */
+.zhenxun-input:-webkit-autofill:focus,
+.zhenxun-input:-moz-autofill:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid transparent !important;
+  background-color: transparent !important;
+}
+/* 增强颜色控制，确保下拉内容选择后的颜色一致性 */
+.zhenxun-input {
+  color: inherit !important;
+  -webkit-text-fill-color: inherit !important;
+  transition: color 0.3s ease !important;
+}
+
+.zhenxun-button {
+background-color: #000000;
+border-radius: 30px;
+width: 25%;
+height: 35px;
+padding: 10px auto 10px auto;
+margin-right: 5px; 
+color: white;
+font-size: 20px;
+white-space: nowrap; /* 按钮文本强制不换行 */
+}
+.zhenxun-button:hover {
+background-color: #296a29;
+border: none;
+}
+/* 按钮点击时的样式 */
+.zhenxun-button:active {
+background-color: #1a3b1a;
+border: none;
+}
+
+/* 按钮下常见病症文字 */
+.zhenxun-bottom-text {
+font-size: 14px;
+line-height: 150%;
+color: #686f7c;
+width: clamp(300px, 50vw, 600px);
+font-family: 'Noto Sans SC', sans-serif; 
+text-align: left;
+padding: 0px 0px 0px 0px;
+}
+.zhenxun-bottom-text a {
+text-decoration: none;
+color: #686f7c;
+}
+.zhenxun-bottom-text a:hover {
+text-decoration: underline;
+color: white !important;
+}
+.zhenxun-bottom-text a:visited {
+color: #686f7c;
+}

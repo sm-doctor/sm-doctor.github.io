@@ -45,7 +45,7 @@ footer:
   light_appearance: "切换为浅色模式"
   powered_by: "由 {{ .Hugo }} &amp; {{ .Theme }} 强力驱动"
   copyright_info: "版权所有"
-  copyright_info1: "炎黄生命科学研究院（筹）"
+  copyright_info1: "深圳炎黄健康科技有限公司"
 
 list:
   externalurl_title: "链接到外部网站"
@@ -69,61 +69,7 @@ sharing:
   twitter: "分享到 Twitter"
 
 shortcode:
-  recent_articles: "『人类健康计划』项目白皮书"
+  recent_articles: "『人类健康计划』项目博客"
 
 recent:
   show_more: "项目博客"
-
-
-
-# 基础界面翻译
-disease_nav_title: "疾病分类导航"
-current_language: "语言"
-nav_unavailable: "导航数据暂不可用"
-search_placeholder: "搜索疾病..."
-
-# 三级导航数据
-disease_nav_data: |
-  [
-    {
-      "name": "第一级导航1",
-      "children": [
-        {
-          "name": "第二级导航1-1",
-          "children": [
-            {
-              "name": "第三级导航1-1-1",
-              "url": "/zh-cn/diseases/1-1-1/"
-            },
-            {
-              "name": "第三级导航1-1-2",
-              "url": "/zh-cn/diseases/1-1-2/"
-            }
-          ]
-        },
-        {
-          "name": "第二级导航1-2", 
-          "children": [
-            {
-              "name": "第三级导航1-2-1",
-              "url": "/zh-cn/diseases/1-2-1/"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "第一级导航2",
-      "children": [
-        {
-          "name": "第二级导航2-1",
-          "children": [
-            {
-              "name": "第三级导航2-1-1", 
-              "url": "/zh-cn/diseases/2-1-1/"
-            }
-          ]
-        }
-      ]
-    }
-  ]

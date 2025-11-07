@@ -1,36 +1,101 @@
-<footer id="site-footer" class="py-10 print:hidden">
+<footer id="site-footer" class="print:hidden" style="padding-bottom: 2.5rem;">
 
-  <div class="flex items-center justify-between" style="display: flex; flex-wrap: wrap; margin-top: 80px;">
+  <div class="footer-content" style="margin-top: 80px;">
+    <style>
+      /* 簡化並加強的頁腳樣式，專注於移動端居中 */
+      #site-footer .footer-content {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        margin-top: 0;
+      }
+      
+      /* 為兩個子部分分別設置class並確保居中 */
+      #site-footer .copyright-section {
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 0;
+        width: 100%;
+        vertical-align: middle;
+        line-height: 1.5;
+      }
+      
+      #site-footer .footer-menu-section {
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        vertical-align: middle;
+        line-height: 1.5;
+      }
+      
+      /* 為菜單項設置樣式，確保它們在居中容器內 */
+      #site-footer .footer-menu-section a {
+        display: inline-block;
+        margin-right: 15px;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+      
+      /* 移除最後一個菜單項的右側間距 */
+      #site-footer .footer-menu-section a:last-child {
+        margin-right: 0;
+      }
+      
+      /* 僅在大屏幕上使用flex和兩端對齊 */
+      @media (min-width: 750px) {
+        #site-footer .footer-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+        }
+        
+        #site-footer .copyright-section,
+        #site-footer .footer-menu-section {
+          text-align: left;
+          width: auto;
+          margin-bottom: 0;
+          vertical-align: middle;
+        }
+        
+        #site-footer .footer-menu-section {
+          text-align: right;
+        }
+      }
+    </style>
 
-    {{/* Copyright */}}
-    <span class="text-sm text-neutral-500 dark:text-neutral-400" style="line-height: 2.5;">
+    {{/* 版權資訊 */}}
+    <div class="copyright-section text-sm text-neutral-500 dark:text-neutral-400">
       {{ if .Site.Params.footer.showCopyright | default true }}
         {{- with replace .Site.Params.copyright "{ year }" now.Year  }}
         {{ . | markdownify }}
         {{- else }}
-        {{ i18n "footer.copyright_info" }} &copy;  {{ now.Format "2006" }}  <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://ohulab.org/" target="_blank">{{ i18n "footer.copyright_info1" }}</a>
+        {{ i18n "footer.copyright_info" }} &copy;  {{ now.Format "2006" }}&nbsp;<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://sm.doctor/" target="_blank">{{ i18n "footer.copyright_info1" }}</a>
         {{- end }}
       {{ end }}
-    </span>
+    </div>
 
-    {{/* Footer menu */}}
-    <span class="text-sm text-neutral-500 dark:text-neutral-400" style="line-height: 2.5;">
+    {{/* 頁腳菜單 */}}
+    <div class="footer-menu-section text-sm text-neutral-500 dark:text-neutral-400">
       {{ if .Site.Params.footer.showMenu | default true }}
         {{ if .Site.Menus.footer }}
-            {{ range .Site.Menus.footer }}
-              <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="{{ .URL }}" title="{{ .Title }}" style="margin-right: 15px;">{{ .Name | markdownify }}</a>
+            {{ range .Site.Menus.footer }}<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="{{ .URL }}" title="{{ .Title }}">{{ .Name | markdownify }}</a>
             {{ end }}
         {{ end }}
       {{ end }}
-    </span>
+    </div>
 
   </div>
 
+  {{/* 图片缩放功能 */}}
+  {{ $enableZoom := default true (not .Site.Params.disableImageZoom) }}
+  {{ if $enableZoom }}
   <script>
-    {{ if not .Site.Params.disableImageZoom | default true }}
-    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {margin: 24, background: 'rgba(0,0,0,0.5)',  scrollOffset: 0,})
-    {{ end }}
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {margin: 24, background: 'rgba(0,0,0,0.5)', scrollOffset: 0});
   </script>
+  {{ end }}
 
   {{ $jsProcess := resources.Get "js/process.js" }}
   {{ $jsProcess = $jsProcess | resources.Minify | resources.Fingerprint "sha512" }}

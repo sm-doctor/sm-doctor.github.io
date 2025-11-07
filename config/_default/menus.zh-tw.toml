@@ -5,37 +5,103 @@ weight = 1
 
 [[main]]
 name = "願景"
-pageRef = "whitepager"
+pageRef = "whitepaper"
 weight = 2
 
 [[main]]
-name = "方法論"
-pageRef = "smd-methodology"
+name = "理論"
 weight = 3
 
-[[main]]
-name = "項目"
-pageRef = "Tags/項目"
-weight = 4
+  [[main]]
+  name = "SMD方法論"
+  parent = "理論"
+  pageRef = "smd-methodology"
+  weight = 31
+  
+  [[main]]
+  name = "SMD系統療法"
+  parent = "理論"
+  pageRef = "wiki"
+  weight = 32
+      
+  [[main]]
+  name = "HHI專案百科"
+  parent = "理論"
+  url = "https://github.com/sm-doctor/sm-doctor.github.io/wiki/"
+  weight = 33
 
 [[main]]
-name = "博客"
-pageRef = "Blog"
+name = "專案"
 weight = 5
 
+  [[main]]
+  name = "教練計劃"
+  parent = "專案"
+  weight = 51
+  pageRef = "/whitepaper/smd-club/"
+  
+  [[main]]
+  name = "人工智能"
+  parent = "專案"
+  weight = 52
+  pageRef = "/whitepaper/smd-ai/"
+  
+  [[main]]
+  name = "連鎖醫館"
+  parent = "專案"
+  weight = 53
+  pageRef = "/whitepaper/smd-medical-hall/"
+  
+  [[main]]
+  name = "療養中心"
+  parent = "專案"
+  weight = 54
+  pageRef = "/whitepaper/smd-center/"
+  
+  [[main]]
+  name = "大健康產業園"
+  parent = "專案"
+  weight = 55
+  pageRef = "/whitepaper/smd-park/"
+  
+  [[main]]
+  name = "社區康養綜合體"
+  parent = "專案"
+  weight = 56
+  pageRef = ""
+  
+  [[main]]
+  name = "生命健康學院"
+  parent = "專案"
+  weight = 57
+  pageRef = "/whitepaper/smd-college/"
+
 [[main]]
-name = "聯絡"
-pageRef = "Contact"
+name = "部落格"
+pageRef = "Blog"
 weight = 6
+
+[[main]]
+name = "聯繫"
+pageRef = "Contact"
+weight = 7
+
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/sm-doctor/"
+  weight = 8
+
+
 
 
 [[footer]]
-  name = "標簽導航"
-  pageRef = "Tags"
+  name = "社交媒體"
+  pageRef = "#"
   weight = 21
 
 [[footer]]
-  name = "問答集錦"
+  name = "問答集锦"
   pageRef = "FAQs"
   weight = 22
 
@@ -45,130 +111,6 @@ pageRef = "Legal"
 weight = 23
 
 [[footer]]
-name = "網站製作"
+name = "網站架構"
 pageRef = "WebsiteStack"
 weight = 24
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
