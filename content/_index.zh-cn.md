@@ -4,46 +4,66 @@ description: ""
 ---
 
 
-<!-- LOGO -->
-<div style="display: block; color: inherit; font-size: clamp(70px, 15vw, 85px); margin-bottom: -10px; ">{{< icon "logo" >}}</div>
-
-<!-- HEADING 中英文 -->
-<div style="display: flex; justify-content: center; align-items: center;">
-  <div id="heading-container" style="width: 350px; text-align: justify; text-align-last: justify; -moz-text-align-last: justify; text-justify: inter-ideograph; max-width: 100%; box-sizing: border-box;">
-   <span style="font-weight: bold; font-size: clamp(18px, 5vw, 26.5px); display: block; text-align: center; text-align-last: justify; line-height: 120%;">Systemic Medicine Doctor</span>
-   <span style="font-size: clamp(25px, 5vw, 31px); display: block; text-align: center; text-align-last: justify; line-height: 120%; white-space: nowrap;">系统疗法的理论与应用</span>
+<!-- LOGO与HEADING 中文 -->
+<div style="display: flex; justify-content: center; align-items: center; flex-wrap: nowrap; width: 100%; padding: 0;">
+  <div style="width: 100%; max-width: 600px; min-width: 300px; display: flex; justify-content: center; align-items: center;">
+    <div style="color: inherit; font-size: clamp(24px, 5vw, 36px); display: flex; align-items: center; justify-content: center;">
+      {{< icon "logo" >}}
+    </div>
+    <div style="text-align: left; font-weight: bold; font-size: clamp(15px, 3vw, 22px); display: flex; align-items: center; margin-left: 5px; overflow: hidden; white-space: nowrap;">
+      系统疗法：医养一体化健康解决方案
+    </div>
   </div>
 </div>
-<style>
-  /* 针对移动设备的媒体查询 */
-  @media (max-width: 480px) {
-    #heading-container {
-      width: 270px !important;
-      text-align: justify !important;
-      text-align-last: justify !important;
-    }
-    #heading-container span {
-      display: block !important;
-      text-align: center !important;
-      text-align-last: justify !important;
-    }
-    /* 减小Consult按钮文字大小并增加上下padding */
-    .zhenxun-button {
-      font-size: calc(var(--btn-font-size, 16px) - 2px) !important;
-      padding-top: 4px !important;
-      padding-bottom: 4px !important;
-    }
-  }
-</style>
 
-
-<!-- 在线病症诊断询框 -->
-<div style="display: flex; justify-content: center; width: 100%;">
-  <div class="zhenxun" style="width: 100%; max-width: 600px; min-width: 300px;">
-   <input type="text" id="symptom-input" placeholder="输入病症名称或描述！" class="zhenxun-input">
-   <button id="show-diagnosis-form" class="zhenxun-button">诊询</button>
+<!-- 诊询文本框 -->
+<div style="display: flex; justify-content: center; width: 100%; padding: 0;">
+  <div class="zhenxun zhenxun-custom" style="width: 100%; max-width: 600px; min-width: 300px; display: flex; flex-direction: column; align-items: stretch; box-sizing: border-box;">
+    <textarea id="symptom-input" placeholder="输入病症名称或描述！" class="zhenxun-input" style="background-color: transparent; color: currentColor; border: 0; border-radius: 5px; padding: 18px; min-height: 100px; font-size: 16px; margin-bottom: 10px; resize: none; width: 100%; box-sizing: border-box; outline: none !important; overflow: hidden;"></textarea>
+    <script>
+    // 自动调整textarea高度
+    function autoResizeTextarea(textarea) {
+      textarea.style.height = 'auto';
+      textarea.style.height = (textarea.scrollHeight) + 'px';
+    }
+    // 页面加载完成后初始化
+    document.addEventListener('DOMContentLoaded', function() {
+      const textarea = document.getElementById('symptom-input');
+      if (textarea) {
+        // 初始设置高度
+        autoResizeTextarea(textarea);      
+        // 输入时自动调整高度
+        textarea.addEventListener('input', function() {
+          autoResizeTextarea(this);
+        });
+        // 窗口大小变化时重新调整
+        window.addEventListener('resize', function() {
+          autoResizeTextarea(textarea);
+        });
+      }
+    });
+    </script>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <button style="background-color: transparent; border: 1.5px solid #8e9692; border-radius: 50px; padding: 10px; cursor: pointer; margin-left: 15px;margin-bottom: 10px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M9.035 15.956a1.29 1.29 0 0 0 1.821-.004l6.911-6.911a3.15 3.15 0 0 0 0-4.457l-.034-.034a3.15 3.15 0 0 0-4.456 0l-7.235 7.234a5.031 5.031 0 0 0 7.115 7.115l6.577-6.577a1.035 1.035 0 0 1 1.463 1.464l-6.576 6.577A7.1 7.1 0 0 1 4.579 10.32l7.235-7.234a5.22 5.22 0 0 1 7.382 0l.034.034a5.22 5.22 0 0 1 0 7.383l-6.91 6.91a3.36 3.36 0 0 1-4.741.012l-.006-.005-.012-.011a3.346 3.346 0 0 1 0-4.732L12.76 7.48a1.035 1.035 0 0 1 1.464 1.463l-5.198 5.198a1.277 1.277 0 0 0 0 1.805z" clip-rule="evenodd" fill="currentColor"></path></svg>
+      </button>
+      <!-- 首页诊询箭头按钮 -->
+      <style>
+        #show-diagnosis-form:hover {
+          background-color: #296a29 !important;
+        }
+        #show-diagnosis-form:active {
+          background-color: #1a3b1a !important;
+        }
+      </style>
+      <span style="color: #818692; font-size: 15px; margin-right: 10px;">一站式健康终极解决方案</span>
+      <button id="show-diagnosis-form" style="background-color: #000000; color: white; border: none; border-radius: 30px; padding: 10px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-bottom: 10px; margin-right: 15px; transition: background-color 0.3s ease;">
+        <svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.3125 0.981648C8.66767 1.05456 8.97902 1.20565 9.2627 1.4338C9.48724 1.61444 9.73029 1.85939 9.97949 2.1086L14.707 6.83614L13.293 8.2502L9 3.95723V15.0432H7V3.95723L2.70703 8.2502L1.29297 6.83614L6.02051 2.1086C6.26971 1.85939 6.51277 1.61444 6.7373 1.4338C6.97662 1.24132 7.28445 1.04548 7.6875 0.981648C7.8973 0.948471 8.1031 0.956625 8.3125 0.981648Z" fill="currentColor"></path></svg>
+      </button>
+    </div>
   </div>
 </div>
+
 <!-- 常见病症列表 -->
 <div style="display: flex; justify-content: center; width: 100%;">
 <div style="width: 100%; max-width: 600px; text-align: justify; text-align-last: left; font-size: calc(14px - 2px); line-height: 180%;">
@@ -217,3 +237,7 @@ style.display='block';">更多...</a>
         });
     };
 </script>
+
+
+
+<div style="width: 100%; text-align: left; margin-top: 50px;">{{< list cardView=true limit=3 where="Type" value="sample" >}}</div>
