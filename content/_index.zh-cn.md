@@ -5,16 +5,16 @@ description: ""
 
 
 <!-- LOGO与HEADING 中文 -->
-<div style="display: flex; justify-content: center; align-items: center; flex-wrap: nowrap; width: 100%; padding: 0;">
-  <div style="width: 100%; max-width: 600px; min-width: 300px; display: flex; justify-content: center; align-items: center;">
-    <div style="color: inherit; font-size: clamp(24px, 5vw, 36px); display: flex; align-items: center; justify-content: center;">
+<header style="width: 100%; display: flex; justify-content: center; align-items: center; padding: 0;">
+  <div style="width: 100%; max-width: 600px; min-width: 300px; display: flex; flex-direction: column; align-items: center;">
+    <div style="color: inherit; font-size: clamp(55px, 15vw, 85px); display: flex; align-items: center; justify-content: center;">
       {{< icon "logo" >}}
     </div>
-    <div style="text-align: left; font-weight: bold; font-size: clamp(15px, 3vw, 22px); display: flex; align-items: center; margin-left: 5px; overflow: hidden; white-space: nowrap;">
-      系统疗法：医养一体化健康解决方案
-    </div>
+    <h1 style="text-align: center; font-weight: bold; font-size: clamp(18px, 3vw, 22px); margin: 5px 0 0; overflow: hidden; line-height: 1.2;">
+      系统疗法：医养一体化疗愈之道
+    </h1>
   </div>
-</div>
+</header>
 
 <!-- 诊询文本框 -->
 <div style="display: flex; justify-content: center; width: 100%; padding: 0;">
@@ -56,7 +56,7 @@ description: ""
           background-color: #1a3b1a !important;
         }
       </style>
-      <span style="color: #818692; font-size: 15px; margin-right: 10px;">一站式健康终极解决方案</span>
+      <span style="color: #818692; font-size: 16px; margin-right: 10px;">一站式健康终极解决方案</span>
       <button id="show-diagnosis-form" style="background-color: #000000; color: white; border: none; border-radius: 30px; padding: 10px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-bottom: 10px; margin-right: 15px; transition: background-color 0.3s ease;">
         <svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.3125 0.981648C8.66767 1.05456 8.97902 1.20565 9.2627 1.4338C9.48724 1.61444 9.73029 1.85939 9.97949 2.1086L14.707 6.83614L13.293 8.2502L9 3.95723V15.0432H7V3.95723L2.70703 8.2502L1.29297 6.83614L6.02051 2.1086C6.26971 1.85939 6.51277 1.61444 6.7373 1.4338C6.97662 1.24132 7.28445 1.04548 7.6875 0.981648C7.8973 0.948471 8.1031 0.956625 8.3125 0.981648Z" fill="currentColor"></path></svg>
       </button>
