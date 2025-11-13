@@ -32,65 +32,65 @@ weight = 3
 
 [[main]]
 name = "项目"
-weight = 5
+weight = 4
 
   [[main]]
   name = "1、训练营计划"
   parent = "项目"
-  weight = 51
+  weight = 41
   pageRef = "/whitepaper/smd-club/"
   
   [[main]]
   name = "2、SMD·AI人工智能"
   parent = "项目"
-  weight = 52
+  weight = 42
   pageRef = "/whitepaper/smd-ai/"
   
   [[main]]
   name = "3、连锁医馆"
   parent = "项目"
-  weight = 53
+  weight = 43
   pageRef = "/whitepaper/smd-medical-hall/"
   
   [[main]]
   name = "4、疗养中心"
   parent = "项目"
-  weight = 54
+  weight = 44
   pageRef = "/whitepaper/smd-center/"
   
   [[main]]
   name = "5、大健康产业园"
   parent = "项目"
-  weight = 55
+  weight = 45
   pageRef = "/whitepaper/smd-park/"
   
   [[main]]
   name = "6、社区康养综合体"
   parent = "项目"
-  weight = 56
+  weight = 46
   pageRef = "#"
   
   [[main]]
   name = "7、国际生命健康学院"
   parent = "项目"
-  weight = 57
+  weight = 47
   pageRef = "/whitepaper/smd-college/"
 
 [[main]]
 name = "博客"
 pageRef = "Blog"
-weight = 6
+weight = 5
 
 [[main]]
 name = "联系"
 pageRef = "Contact"
-weight = 7
+weight = 6
 
 [[main]]
   identifier = "github"
   pre = "github"
   url = "https://github.com/sm-doctor/"
-  weight = 8
+  weight = 7
 
 
 
