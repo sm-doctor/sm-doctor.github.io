@@ -21,7 +21,7 @@ weight = 3
   [[main]]
   name = "SMD系统疗法"
   parent = "理论"
-  pageRef = "wiki"
+  pageRef = "#"
   weight = 32
       
   [[main]]
@@ -68,7 +68,7 @@ weight = 5
   name = "6、社区康养综合体"
   parent = "项目"
   weight = 56
-  pageRef = ""
+  pageRef = "#"
   
   [[main]]
   name = "7、国际生命健康学院"
