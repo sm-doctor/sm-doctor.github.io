@@ -90,24 +90,23 @@
 
         </div>
     </div>
-    <div class="-my-2 md:hidden">
 
+    <div class="-my-2 md:hidden">
         <label id="menu-button" class="block">
             {{ if .Site.Menus.main }}
             <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
                 {{ partial "icon.html" "bars" }}
             </div>
-            <div id="menu-wrapper" style="padding-top:5px;"
-                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
-                <ul
-                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+            {{/* ------汉堡按钮点击进入菜单------ */}}
+            <div id="menu-wrapper" style="padding-top:0px; background-color: rgba(0, 0, 0, 0.9); color: #fff;" class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default">
+                <ul 
+                    class="flex space-y-2 flex-col py-6 px-6 w-full mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
 
                     <li id="menu-close-button">
-                        <span
-                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">{{
-                            partial
-                            "icon.html"
-                            "xmark" }}</span>
+                      <span style="margin:0px 0px 10px 0px; font-size: 30px;" class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+                        {{ partial "icon.html" "xmark" }}
+                      </span>
                     </li>
 
                     {{ range .Site.Menus.main }}

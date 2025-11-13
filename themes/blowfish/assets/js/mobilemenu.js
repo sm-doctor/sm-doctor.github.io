@@ -25,7 +25,9 @@ var closeMenu = function (e) {
     menuWrapper.style.visibility = "hidden";
     menuWrapper.style.opacity = "0";
     window.onbeforeunload = function (event) { }
-    e.stopPropagation();
+    if (e && typeof e.stopPropagation === 'function') {
+      e.stopPropagation();
+    }
   }
 }
 

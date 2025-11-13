@@ -1,4 +1,27 @@
 
+/* 移除所有链接的下划线 */
+a {
+  text-decoration: none !important;
+}
+
+/* 覆盖.active类的下划线样式 */
+.active {
+  text-decoration-line: none !important;
+  text-decoration-thickness: none !important;
+  text-underline-offset: 0 !important;
+}
+
+/* 确保当前页链接也没有下划线 */
+a.active,
+a[aria-current="page"],
+nav .active a,
+nav a.active,
+.list li a.active,
+.list li a[aria-current="page"],
+.collapsible-smd.active a {
+  text-decoration: none !important;
+}
+
 /* 定义了首页左上角文字LOGO样式 */
 .space-x-3-sm {
   height: 4.2rem; /* 定义了HEADER LOGO、网站名称、导航栏行度 */
