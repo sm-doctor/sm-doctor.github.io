@@ -1,0 +1,16 @@
+{
+  "name": "submit-diagnosis-cloudfunction",
+  "version": "1.0.0",
+  "description": "DeepSeek诊断与邮件发送云函数",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.13",
+    "node-fetch": "^2.6.7"
+  },
+  "engines": {
+    "node": "14 || 16 || 18"
+  }
+}
