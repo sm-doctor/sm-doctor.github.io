@@ -25,9 +25,9 @@ weight = 3
   weight = 32
       
   [[main]]
-  name = "HHI项目百科"
+  name = "SMD标准化"
   parent = "理论"
-  url = "https://github.com/sm-doctor/sm-doctor.github.io/wiki/"
+  url = "#"
   weight = 33
 
 [[main]]
@@ -35,43 +35,49 @@ name = "项目"
 weight = 4
 
   [[main]]
-  name = "1、训练营计划"
+  name = "1、HHI人类健康计划"
   parent = "项目"
   weight = 41
+  pageRef = "#"
+
+  [[main]]
+  name = "2、SMD训练营"
+  parent = "项目"
+  weight = 42
   pageRef = "/whitepaper/smd-club/"
   
   [[main]]
-  name = "2、SMD·AI人工智能"
+  name = "3、SMD·AI人工智能"
   parent = "项目"
-  weight = 42
+  weight = 43
   pageRef = "/whitepaper/smd-ai/"
   
   [[main]]
-  name = "3、连锁医馆"
+  name = "4、SMD连锁医馆"
   parent = "项目"
-  weight = 43
+  weight = 44
   pageRef = "/whitepaper/smd-medical-hall/"
   
   [[main]]
-  name = "4、疗养中心"
+  name = "5、SMD疗养中心"
   parent = "项目"
-  weight = 44
+  weight = 45
   pageRef = "/whitepaper/smd-center/"
   
   [[main]]
-  name = "5、大健康产业园"
+  name = "5、SMD大健康产业园"
   parent = "项目"
   weight = 45
   pageRef = "/whitepaper/smd-park/"
   
   [[main]]
-  name = "6、社区康养综合体"
+  name = "6、SMD社区康养综合体"
   parent = "项目"
   weight = 46
   pageRef = "#"
   
   [[main]]
-  name = "7、国际生命健康学院"
+  name = "7、SMD国际健康学院"
   parent = "项目"
   weight = 47
   pageRef = "/whitepaper/smd-college/"
