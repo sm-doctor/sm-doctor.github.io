@@ -3,3 +3,7 @@
 /.trae/
 /api/
 .env.example
+/node_modules/
+package-lock.json
+package.json
+LOCAL_TEST_GUIDE.md
