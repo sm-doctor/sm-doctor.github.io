@@ -90,7 +90,7 @@ description: ""
 </div>
 
 <!-- 邮箱输入模态框 -->
-<div id="email-modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(6, 9, 7, 0.6); overflow: auto; padding: 20px; box-sizing: border-box; display: flex; justify-content: center; align-items: center;">
+<div id="email-modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.8); overflow: hidden; padding: 0; box-sizing: border-box; justify-content: center; align-items: center;">
   <div style="width: 500px; max-width: 95%; background-color: white; border-radius: 8px; padding: 30px; box-sizing: border-box;">
     <button type="button" onclick="document.getElementById('email-modal').style.display='none'" style="position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 24px; cursor: pointer; color: #888;">×</button>
     <h2 style="text-align: center; color: #333; margin-bottom: 20px;">输入您的邮箱地址</h2>
@@ -103,7 +103,7 @@ description: ""
 </div>
 
 <!-- 进度提示框 -->
-<div id="progress-modal" style="display: none; position: fixed; z-index: 1001; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); justify-content: center; align-items: center;">
+<div id="progress-modal" style="display: none; position: fixed; z-index: 1001; left: 0; top: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center; overflow: hidden; padding: 0; box-sizing: border-box;">
   <div style="background-color: white; padding: 40px; border-radius: 8px; text-align: center; width: 300px; max-width: 90%; min-height: 150px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
     <div style="margin-bottom: 20px;">
       <!-- 简单的加载动画 -->
@@ -114,7 +114,7 @@ description: ""
 </div>
 
 <!-- 成功提示框 -->
-<div id="success-modal" style="display: none; position: fixed; z-index: 1001; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); justify-content: center; align-items: center;">
+<div id="success-modal" style="display: none; position: fixed; z-index: 1001; left: 0; top: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center; overflow: hidden; padding: 0; box-sizing: border-box;">
   <div style="background-color: white; padding: 40px; border-radius: 8px; text-align: center; width: 300px; max-width: 90%; min-height: 150px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
     <div style="margin-bottom: 20px; font-size: 40px; color: #4CAF50;">✓</div>
     <p style="font-size: 16px; color: #333; margin: 0 0 20px 0;">稍后检查邮箱获取诊询信息</p>
@@ -123,7 +123,7 @@ description: ""
 </div>
 
 <!-- 失败提示框 -->
-<div id="error-modal" style="display: none; position: fixed; z-index: 1001; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); justify-content: center; align-items: center;">
+<div id="error-modal" style="display: none; position: fixed; z-index: 1001; left: 0; top: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center; overflow: hidden; padding: 0; box-sizing: border-box;">
   <div style="background-color: white; padding: 40px; border-radius: 8px; text-align: center; width: 300px; max-width: 90%;">
     <div style="margin-bottom: 20px; font-size: 40px; color: #F44336;">✗</div>
     <p id="error-message" style="font-size: 16px; color: #333;">处理失败，请稍后重试</p>
