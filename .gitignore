@@ -6,5 +6,5 @@
 /node_modules/
 package-lock.json
 package.json
-LOCAL_TEST_GUIDE.md
 README_test.md
+LOCAL_TEST_GUIDE.md
