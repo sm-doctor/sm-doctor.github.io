@@ -19,11 +19,46 @@ description: ""
 
 <!-- 嵌入zhenxun.sm.doctor -->
 <div style="display: flex; justify-content: center; width: 100%; padding: 20px 0;">
-  <div style="max-width: 600px; width: 100%;">
+  <div style="max-width: 600px; width: 100%; position: relative;">
+    <!-- 加载动画 -->
+    <div id="iframe-loader" style="position: absolute;top: 0; left: 0; width: 100%; height: 350px; background-color: transparent; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 10; border-radius: 8px;">
+        <!-- 加载动画图标 -->
+        <div style="border: 3px solid #f3f3f3; border-top: 3px solid #296a29; border-radius: 50%;     width: 40px; height: 40px; animation: spin 1s linear infinite; margin-bottom: 15px;"></div>
+        <!-- 加载文字 -->
+        <p style="margin: 0; color: #666; font-size: 15px;">加载中...</p>
+    </div>
+    <!-- iframe内容 -->
     <iframe id="zhenxun-iframe" src="https://zhenxun.sm.doctor/" width="100%" height="350px" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" sandbox="allow-same-origin allow-scripts" title="SMD·AI" style="background-color: transparent;" allowtransparency="true">
-      您的浏览器不支持iframe标签，无法显示嵌入内容。
+        您的浏览器不支持iframe标签，无法显示嵌入内容。
     </iframe>
-  </div>
+    <!-- 加载动画样式 -->
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    <!-- 加载动画脚本 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const iframe = document.getElementById('zhenxun-iframe');
+            const loader = document.getElementById('iframe-loader');        
+            // 监听iframe加载完成事件
+            iframe.onload = function() {
+                // 隐藏加载动画
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 500); // 稍微延迟以确保内容完全显示
+            };
+            // 处理加载超时情况
+            setTimeout(() => {
+                if (loader && loader.style.display !== 'none') {
+                    loader.innerHTML = '<p style="color: #666; font-size: 16px;">加载较慢，请稍候...</p>';
+                }
+            }, 5000);
+        });
+    </script>
+</div>
 </div>
 
 <script>
