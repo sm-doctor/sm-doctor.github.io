@@ -12,4 +12,106 @@
       originalCloseMenu.apply(this, arguments);
     };
   }
+  
+  // 向iframe发送主题同步信息
+  function syncThemeToIframes() {
+    try {
+      // 获取当前主题状态
+      const isDark = document.documentElement.classList.contains('dark');
+      const theme = isDark ? 'dark' : 'light';
+      
+      // 获取所有iframe元素
+      const iframes = document.querySelectorAll('iframe');
+      
+      // 向每个iframe发送主题信息
+      iframes.forEach(iframe => {
+        try {
+          // 发送多种格式的主题信息，确保ZHENXUN页面能接收
+          iframe.contentWindow.postMessage({
+            type: 'theme_change',
+            theme: theme,
+            isDark: isDark,
+            documentClasses: Array.from(document.documentElement.classList)
+          }, '*');
+          
+          console.log('主题信息已发送到iframe:', theme);
+        } catch (err) {
+          console.log('无法向iframe发送主题信息:', err.message);
+        }
+      });
+    } catch (e) {
+      console.log('同步主题到iframe时出错:', e.message);
+    }
+  }
+  
+  // 监听来自iframe的主题请求
+  window.addEventListener('message', function(event) {
+    try {
+      // 检查是否是ZHENXUN页面的主题请求
+      if (event.data && event.data.type === 'zhenxun_theme_request') {
+        console.log('收到ZHENXUN页面的主题请求');
+        // 立即回复主题信息
+        syncThemeToIframes();
+      }
+    } catch (e) {
+      console.log('处理iframe消息时出错:', e.message);
+    }
+  }, false);
+  
+  // 监听主题切换事件
+  function setupThemeChangeListeners() {
+    // 找到主题切换按钮
+    const switcher = document.getElementById('appearance-switcher');
+    const switcherMobile = document.getElementById('appearance-switcher-mobile');
+    
+    // 为主题切换按钮添加自定义事件监听器
+    if (switcher) {
+      // 保存原始点击事件处理
+      const originalClick = switcher.onclick;
+      
+      // 替换为新的点击处理函数
+      switcher.onclick = function(event) {
+        // 先调用原始处理函数
+        if (typeof originalClick === 'function') {
+          originalClick.call(this, event);
+        }
+        
+        // 延迟发送主题信息，确保DOM已经更新
+        setTimeout(syncThemeToIframes, 100);
+      };
+    }
+    
+    if (switcherMobile) {
+      // 保存原始点击事件处理
+      const originalMobileClick = switcherMobile.onclick;
+      
+      // 替换为新的点击处理函数
+      switcherMobile.onclick = function(event) {
+        // 先调用原始处理函数
+        if (typeof originalMobileClick === 'function') {
+          originalMobileClick.call(this, event);
+        }
+        
+        // 延迟发送主题信息，确保DOM已经更新
+        setTimeout(syncThemeToIframes, 100);
+      };
+    }
+    
+    // 监听系统主题变化
+    if (window.matchMedia) {
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(event) {
+        // 延迟发送主题信息，确保DOM已经更新
+        setTimeout(syncThemeToIframes, 100);
+      });
+    }
+  }
+  
+  // 页面加载完成后初始化
+  document.addEventListener('DOMContentLoaded', function() {
+    // 设置主题变化监听器
+    setupThemeChangeListeners();
+    
+    // 页面加载完成后立即同步一次主题
+    syncThemeToIframes();
+  });
 </script>
