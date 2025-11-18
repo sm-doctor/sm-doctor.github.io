@@ -28,7 +28,7 @@ description: ""
         <p style="margin: 0; color: #666; font-size: 15px;">加载中...</p>
     </div>
     <!-- iframe内容 -->
-    <iframe id="zhenxun-iframe" src="https://zhenxun.sm.doctor/" width="100%" height="350px" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" sandbox="allow-same-origin allow-scripts" title="SMD·AI" style="background-color: transparent; max-width: 600px; min-width: 300px;" allowtransparency="true">
+    <iframe id="zhenxun-iframe" src="https://zhenxun.sm.doctor/" width="100%" height="350px" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" sandbox="allow-same-origin allow-scripts" title="SMD·AI" style="background-color: transparent; max-width: 600px; min-width: 320px;" allowtransparency="true">
         您的浏览器不支持iframe标签，无法显示嵌入内容。
     </iframe>
     <!-- 加载动画样式 -->
