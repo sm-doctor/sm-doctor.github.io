@@ -23,12 +23,12 @@ description: ""
     <!-- 加载动画 -->
     <div id="iframe-loader" style="position: absolute;top: 0; left: 0; width: 100%; height: 350px; background-color: transparent; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 10; border-radius: 8px;">
         <!-- 加载动画图标 -->
-        <div style="border: 4px solid #f3f3f3; border-top: 3px solid #296a29; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin-bottom: 15px;"></div>
+        <div style="border: 3px solid #f3f3f3; border-top: 3px solid #296a29; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin-bottom: 15px;"></div>
         <!-- 加载文字 -->
         <p style="margin: 0; color: #666; font-size: 15px;">加载中...</p>
     </div>
     <!-- iframe内容 -->
-    <iframe id="zhenxun-iframe" src="https://zhenxun.sm.doctor/" width="100%" height="350px" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" sandbox="allow-same-origin allow-scripts" title="SMD·AI" style="background-color: transparent; max-width: 600px; min-width: 320px;" allowtransparency="true">
+    <iframe id="zhenxun-iframe" src="https://sm.doctor/" width="100%" height="350px" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" sandbox="allow-same-origin allow-scripts" title="SMD·AI" style="background-color: transparent; max-width: 600px; min-width: 320px;" allowtransparency="true">
         您的浏览器不支持iframe标签，无法显示嵌入内容。
     </iframe>
     <!-- 加载动画样式 -->
@@ -53,7 +53,7 @@ description: ""
                 }, 500); // 稍微延迟以确保内容完全显示
                 // 加载完成后，向iframe发送消息请求高度调整
                 try {
-                    iframe.contentWindow.postMessage({ type: 'request-height' }, 'https://zhenxun.sm.doctor/');
+                    iframe.contentWindow.postMessage({ type: 'request-height' }, 'https://sm.doctor/');
                 } catch (e) {
                     console.log('无法向iframe发送高度请求消息:', e);
                 }
@@ -95,7 +95,7 @@ function sendThemeToIframe(forceUpdate = false) {
                 type: 'theme-change',
                 theme: currentTheme,
                 timestamp: Date.now()
-            }, "https://zhenxun.sm.doctor/");
+            }, "https://sm.doctor/");
             
             // 记录最后发送的主题
             iframe.lastTheme = currentTheme;
@@ -130,7 +130,7 @@ function checkIframeLoaded() {
 // 处理来自iframe的响应消息
 function handleIframeMessage(event) {
     // 验证消息来源
-    if (event.origin !== "https://zhenxun.sm.doctor/") {
+    if (event.origin !== "https://sm.doctor/") {
         return;
     }
     
