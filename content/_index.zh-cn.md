@@ -23,7 +23,7 @@ description: ""
     <!-- 加载动画 -->
     <div id="iframe-loader" style="position: absolute;top: 0; left: 0; width: 100%; height: 350px; background-color: transparent; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 10; border-radius: 8px;">
         <!-- 加载动画图标 -->
-        <div style="border: 3px solid #f3f3f3; border-top: 3px solid #296a29; border-radius: 50%;     width: 40px; height: 40px; animation: spin 1s linear infinite; margin-bottom: 15px;"></div>
+        <div style="border: 5px solid #f3f3f3; border-top: 3px solid #296a29; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin-bottom: 15px;"></div>
         <!-- 加载文字 -->
         <p style="margin: 0; color: #666; font-size: 15px;">加载中...</p>
     </div>

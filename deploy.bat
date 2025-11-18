@@ -1,8 +1,8 @@
 @echo off
 git add .
-echo 输入递交修改信息:
+echo Enter SM.DOCTOR's Project commit message:
 set /p commit_msg=
 git commit -m "%commit_msg%"
 git push origin main
-echo 部署完成！Github Actions 已触发...
+echo Deployment completed! SMD's Project Github Actions build triggered...
 pause
