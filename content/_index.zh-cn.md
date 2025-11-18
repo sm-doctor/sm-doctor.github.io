@@ -20,7 +20,7 @@ description: ""
 <!-- 嵌入zhenxun.sm.doctor -->
 <div style="display: flex; justify-content: center; width: 100%; padding: 20px 0;">
   <div style="max-width: 600px; width: 100%;">
-    <iframe id="zhenxun-iframe" src="http://localhost:3001/" width="100%" height="350px" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" sandbox="allow-same-origin allow-scripts" title="SMD·AI" style="background-color: transparent;" allowtransparency="true">
+    <iframe id="zhenxun-iframe" src="https://zhenxun.sm.doctor/" width="100%" height="350px" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" sandbox="allow-same-origin allow-scripts" title="SMD·AI" style="background-color: transparent;" allowtransparency="true">
       您的浏览器不支持iframe标签，无法显示嵌入内容。
     </iframe>
   </div>
