@@ -28,7 +28,7 @@ description: ""
         <p style="margin: 0; color: #666; font-size: 15px;">加载中...</p>
     </div>
     <!-- iframe内容 -->
-    <iframe id="zhenxun-iframe" src="https://zhenxun.sm.doctor/" width="100%" height="350px" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" sandbox="allow-same-origin allow-scripts" title="SMD·AI" style="background-color: transparent;" allowtransparency="true">
+    <iframe id="zhenxun-iframe" src="https://zhenxun.sm.doctor/" width="100%" height="350px" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" sandbox="allow-same-origin allow-scripts" title="SMD·AI" style="background-color: transparent; max-width: 600px; min-width: 300px;" allowtransparency="true">
         您的浏览器不支持iframe标签，无法显示嵌入内容。
     </iframe>
     <!-- 加载动画样式 -->
@@ -42,13 +42,21 @@ description: ""
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const iframe = document.getElementById('zhenxun-iframe');
-            const loader = document.getElementById('iframe-loader');        
+            const loader = document.getElementById('iframe-loader');
+            // 设置加载动画容器的初始高度
+            loader.style.height = '350px';
             // 监听iframe加载完成事件
             iframe.onload = function() {
                 // 隐藏加载动画
                 setTimeout(() => {
                     loader.style.display = 'none';
                 }, 500); // 稍微延迟以确保内容完全显示
+                // 加载完成后，向iframe发送消息请求高度调整
+                try {
+                    iframe.contentWindow.postMessage({ type: 'request-height' }, 'https://zhenxun.sm.doctor/');
+                } catch (e) {
+                    console.log('无法向iframe发送高度请求消息:', e);
+                }
             };
             // 处理加载超时情况
             setTimeout(() => {
@@ -87,7 +95,7 @@ function sendThemeToIframe(forceUpdate = false) {
                 type: 'theme-change',
                 theme: currentTheme,
                 timestamp: Date.now()
-            }, "http://localhost:3001");
+            }, "https://zhenxun.sm.doctor/");
             
             // 记录最后发送的主题
             iframe.lastTheme = currentTheme;
@@ -129,6 +137,19 @@ function handleIframeMessage(event) {
     // 处理iframe的确认消息
     if (event.data && event.data.type === 'theme-ack') {
         console.log(`iframe已确认收到主题: ${event.data.theme}`);
+    }
+    
+    // 处理iframe的高度调整请求
+    if (event.data && event.data.type === 'height-update' && typeof event.data.height === 'number') {
+        const iframe = document.getElementById('zhenxun-iframe');
+        try {
+            // 设置一个最小高度以防止内容为空时iframe完全消失
+            const minHeight = 350;
+            // 应用从iframe接收到的高度，确保不小于最小高度
+            iframe.style.height = Math.max(minHeight, event.data.height + 20) + 'px';
+        } catch (e) {
+            console.error('通过消息调整iframe高度时出错:', e);
+        }
     }
 }
 
