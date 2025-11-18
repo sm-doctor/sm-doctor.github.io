@@ -41,7 +41,7 @@ weight = 4
   pageRef = "#"
 
   [[main]]
-  name = "2、SMD正觉疗法训练营"
+  name = "2、SMD正觉训练营"
   parent = "项目"
   weight = 42
   pageRef = "/whitepaper/smd-club/"
