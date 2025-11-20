@@ -1,219 +1,218 @@
 ---
-title: "Human Health Initiative"
+title: "人类健康计划"
 description: ""
 ---
 
 
-
-<!-- LOGO -->
-<div style="display: block; color: inherit; font-size: clamp(70px, 15vw, 85px); margin-bottom: -15px; ">{{< icon "logo" >}}</div>
-
-<!-- 标题 -->
-<div style="display: flex; justify-content: center; align-items: center;">
-  <div id="heading-container" style="width: 350px; text-align: justify; text-align-last: justify; -moz-text-align-last: justify; text-justify: inter-ideograph; max-width: 100%; box-sizing: border-box;">
-   <span style="font-weight: bold; font-size: clamp(18px, 5vw, 26.5px); display: block; text-align: center; text-align-last: justify; line-height: 130%;">Systemic Medicine Doctor</span>
-   <span style="font-size: clamp(12px, 3vw, 16px); display: block; text-align: center; text-align-last: justify; line-height: 130%; white-space: nowrap;">Theory and Application of Systemic Medicine</span>
+<!-- LOGO与HEADING 中文 -->
+<header style="width: 100%; display: flex; justify-content: center; align-items: center; padding: 0;">
+  <div style="width: 100%; max-width: 600px; min-width: 300px; display: flex; flex-direction: column; align-items: center;">
+    <div style="color: inherit; font-size: clamp(55px, 15vw, 80px); display: flex; align-items: center; justify-content: center;">
+      {{< icon "logo" >}}
+    </div>
+    <h1 style="text-align: center; font-weight: bold; font-size: clamp(18px, 3vw, 30px); margin: 5px 0 0; overflow: hidden; line-height: 1.2;">
+      One-stop Health Solution
+    </h1>
   </div>
-</div>
-<style>
-  /* 移动端媒体查询 */
-  @media (max-width: 480px) {
-    #heading-container {
-      width: 270px !important;
-      text-align: justify !important;
-      text-align-last: justify !important;
-    }
-    #heading-container span {
-      display: block !important;
-      text-align: center !important;
-      text-align-last: justify !important;
-    }
-    /* 减小Consult按钮文字大小并增加上下padding */
-    .zhenxun-button {
-      font-size: calc(var(--btn-font-size, 16px) - 2px) !important;
-      padding-top: 4px !important;
-      padding-bottom: 4px !important;
-    }
-  }
-</style>
+</header>
 
 
-<!-- 在线病症诊断询框 -->
-<div style="display: flex; justify-content: center; width: 100%;">
-  <div class="zhenxun" style="width: 100%; max-width: 600px; min-width: 300px;">
-   <input type="text" id="symptom-input" placeholder="Enter symptom name!" class="zhenxun-input">
-   <button id="show-diagnosis-form" class="zhenxun-button">Consult</button>
-  </div>
-</div>
-<!-- 常见病症列表 -->
-<div style="display: flex; justify-content: center; width: 100%;">
-<div style="width: 100%; max-width: 600px; text-align: justify; text-align-last: left; font-size: calc(14px - 2px); line-height: 180%;">
-<span style="color: #818692; font-size: 13px; font-weight: bold;">Common&nbsp;Symptoms:&nbsp;</span><a href="javascript:void(0)" style="border: 1px solid #818692; border-radius: 5px; padding: 0 5px; color: #818692; text-decoration: none; display: inline-block; margin: 1.5px 1.5px;" onclick="document.getElementById('diagnosis-symptom').value=this.textContent; document.getElementById('diagnosis-modal').style.display='block';">Flu</a>
-<a href="javascript:void(0)" style="border: 1px solid #818692; border-radius: 5px; padding: 0 5px; color: #818692; text-decoration: none; display: inline-block; margin: 1.5px 1.5px;" onclick="document.getElementById('diagnosis-symptom').value=this.textContent; document.getElementById('diagnosis-modal').style.display='block';">Cold</a>
-<a href="javascript:void(0)" style="border: 1px solid #818692; border-radius: 5px; padding: 0 5px; color: #818692; 
-text-decoration: none; display: inline-block; margin: 1.5px 1.5px;" onclick="document.getElementById('diagnosis-symptom').
-value=this.textContent; document.getElementById('diagnosis-modal').style.display='block';">Hypertension</a>
-<a href="javascript:void(0)" style="border: 1px solid #818692; border-radius: 5px; padding: 0 5px; color: #818692; text-decoration: none; display: inline-block; margin: 1.5px 1.5px;" onclick="document.getElementById('diagnosis-symptom').value=this.textContent; document.getElementById('diagnosis-modal').style.display='block';">Fever</a>
-<a href="javascript:void(0)" style="border: 1px solid #818692; border-radius: 5px; padding: 0 5px; color: #818692; text-decoration: none; display: inline-block; margin: 1.5px 1.5px;" onclick="document.getElementById('diagnosis-symptom').value=this.textContent; document.getElementById('diagnosis-modal').style.display='block';">Diabetes</a>
-<a href="javascript:void(0)" style="border: 1px solid #818692; border-radius: 5px; padding: 0 5px; color: #818692; text-decoration: none; display: inline-block; margin: 1.5px 1.5px;" onclick="document.getElementById('diagnosis-symptom').value=this.textContent; document.getElementById('diagnosis-modal').style.display='block';">Asthma</a>
-<a href="javascript:void(0)" style="border: 1px solid #818692; border-radius: 5px; padding: 0 5px; color: #818692; text-decoration: none; display: inline-block; margin: 1.5px 1.5px;" onclick="document.getElementById('diagnosis-symptom').value=this.textContent; document.getElementById('diagnosis-modal').style.display='block';">Arthritis</a>
-<a href="javascript:void(0)" style="border: 1px solid #818692; border-radius: 5px; padding: 0 5px; color: #818692; text-decoration: none; display: inline-block; margin: 1.5px 1.5px;" onclick="document.getElementById('diagnosis-symptom').value=this.textContent; document.getElementById('diagnosis-modal').style.display='block';">Migraine</a>
-<a href="javascript:void(0)" style="border: 1px solid #818692; border-radius: 5px; padding: 0 5px; color: #818692; text-decoration: none; display: inline-block; margin: 1.5px 1.5px;" onclick="document.getElementById('diagnosis-symptom').value=this.textContent; document.getElementById('diagnosis-modal').style.display='block';">Allergy</a>
-<a href="javascript:void(0)" style="border: 1px solid #818692; border-radius: 5px; padding: 0 5px; color: #818692; text-decoration: none; display: inline-block; margin: 1.5px 1.5px;" onclick="document.getElementById('diagnosis-symptom').value=this.textContent; document.getElementById('diagnosis-modal').style.display='block';">Insomnia</a>
-<a href="javascript:void(0)" style="border: 1px solid #818692; border-radius: 5px; padding: 0 5px; color: #818692; text-decoration: none; display: inline-block; margin: 1.5px 1.5px;" onclick="document.getElementById('diagnosis-symptom').value=this.textContent; document.getElementById('diagnosis-modal').style.display='block';">Fatigue</a>
-<a href="javascript:void(0)" style="border: 1px solid #818692; border-radius: 5px; padding: 0 5px; color: #818692; text-decoration: none; display: inline-block; margin: 1.5px 1.5px;" onclick="document.getElementById('diagnosis-symptom').value=this.textContent; document.getElementById('diagnosis-modal').style.display='block';">Dizziness</a>
-<a href="javascript:void(0)" style="border: 1px solid #818692; border-radius: 5px; padding: 0 5px; color: #818692; text-decoration: none; display: inline-block; margin: 1.5px 1.5px;" onclick="document.getElementById('diagnosis-symptom').value=this.textContent; document.getElementById('diagnosis-modal').style.display='block';">Lethargy</a>
-<a href="javascript:void(0)" style="border: 1px solid #818692; border-radius: 5px; padding: 0 5px; color: #818692; text-decoration: none; display: inline-block; margin: 1.5px 1.5px;" onclick="document.getElementById('diagnosis-symptom').value=this.textContent; document.getElementById('diagnosis-modal').style.display='block';">Irritability</a>
-<a href="javascript:void(0)" style="border: 1px solid #818692; border-radius: 5px; padding: 0 5px; color: #818692; text-decoration: none; display: inline-block; margin: 1.5px 1.5px;" onclick="document.getElementById('diagnosis-symptom').value=this.textContent; document.getElementById('diagnosis-modal').style.display='block';">Malaise</a>
-<a href="javascript:void(0)" style="border: 1px solid #818692; border-radius: 5px; padding: 0 5px; color: #818692; text-decoration: none; display: inline-block; margin: 1.5px 1.5px;" onclick="document.getElementById('diagnosis-symptom').value=''; document.getElementById('diagnosis-modal').style.display='block';">More...</a>
-</div>
-</div>
-
-
-<!-- 诊询信息填写表单模态框 -->
-<div id="diagnosis-modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(6, 9, 7, 0.6); overflow: auto; padding: 20px; box-sizing: border-box;">
-    <!-- 进度提示框 -->
-    <div id="progress-modal" style="display: none; position: fixed; z-index: 1002; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); justify-content: center; align-items: center;">
-        <div style="background-color: white; padding: 40px; border-radius: 8px; text-align: center; width: 300px; max-width: 90%; min-height: 150px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <div style="margin-bottom: 20px;">
-                <!-- 简单的加载动画 -->
-                <div style="width: 40px; height: 40px; border: 4px solid #f3f3f3; border-top: 4px solid #818692; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto;"></div>
-            </div>
-            <p style="font-size: 16px; color: #333; margin: 0;">Submitting, please wait...</p>
-        </div>
+<!-- 嵌入zhenxun.sm.doctor -->
+<div style="display: flex; justify-content: center; width: 100%; padding: 20px 0;">
+  <div style="max-width: 600px; width: 100%; position: relative;">
+    <!-- 加载动画 -->
+    <div id="iframe-loader" style="position: absolute;top: 0; left: 0; width: 100%; height: 350px; background-color: transparent; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 10; border-radius: 8px;">
+        <!-- 加载动画图标 -->
+        <div style="border: 3px solid #f3f3f3; border-top: 3px solid #296a29; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin-bottom: 15px;"></div>
+        <!-- 加载文字 -->
+        <p style="margin: 0; color: #666; font-size: 15px;">Loading...</p>
     </div>
-    
-<!-- 成功提示框 -->
-<div id="success-modal" style="display: none; position: fixed; z-index: 1002; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); justify-content: center; align-items: center;">
-        <div style="background-color: white; padding: 40px; border-radius: 8px; text-align: center; width: 300px; max-width: 90%; min-height: 150px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <div style="margin-bottom: 20px; font-size: 40px; color: #4CAF50;">✓</div>
-            <p style="font-size: 16px; color: #333; margin: 0 0 20px 0;">Sent successfully!</p>
-            <button id="success-confirm-btn" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Confirm</button>
-        </div>
-    </div>
-    
-<!-- 失败提示框 -->
-<div id="error-modal" style="display: none; position: fixed; z-index: 1002; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); justify-content: center; align-items: center;">
-        <div style="background-color: white; padding: 40px; border-radius: 8px; text-align: center; width: 300px; max-width: 90%;">
-            <div style="margin-bottom: 20px; font-size: 40px; color: #F44336;">✗</div>
-            <p id="error-message" style="font-size: 16px; color: #333;">Failed to send:</p>
-        </div>
-    </div>
-    
-  <!-- 加载动画样式 -->
-  <style>
-      @keyframes spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-      }
-  </style>
-  
-  <!-- 关闭按钮 - 定位在整个页面的右上角 -->
-  <button type="button" onclick="document.getElementById('diagnosis-modal').style.display='none'" style="position: absolute; top: 20px; right: 20px; width: 60px; height: 60px; background-color: rgba(0,0,0,0.5); color: white; border: 0; border-radius: 0; cursor: pointer; font-size: 30px; line-height: 60px; text-align: center; z-index: 1001;">×</button>
-  <div style="width: 500px; max-width: 95%; margin: 100px auto; position: relative;">
-    <form id="diagnosis-form" class="custom-formcontact-container">
-  <!-- 隐藏的时间字段 -->
-  <input type="hidden" name="time" value="Mar 10 2025 08:46">
- <!-- 病症名称字段 -->
-  <input class="custom-formcontact-input" type="text" id="diagnosis-symptom" name="title" placeholder="Symptom Name" required><br>
-  <!-- 症状详述文本框 -->
-  <textarea class="custom-formcontact-textarea" style="margin: 6px auto 0px;" id="symptom-details" name="message" placeholder="Detailed Symptom Description"></textarea><br>
-  <!-- 用户名字段 -->
-  <input class="custom-formcontact-input" style="margin: 6px auto;" type="text" id="name" name="name" placeholder="Your Name*" required><br>
-  <!-- 电子邮件字段 -->
-  <input class="custom-formcontact-input" style="margin: 6px auto;" type="email" id="email" name="email" placeholder="Email Address*" required><br>
-  <button type="submit" class="zhenxun-button" style="width: 100%; margin: 10px auto; height: 43px;">Submit</button>
-  </form>
-</div>
-</div>
-
-
-<!-- 引入本地emailjs库 -->
-<script src="/js/email.min.js"></script>
-
-<script type="text/javascript">
-    window.onload = function() {
-        // 初始化emailjs
-        emailjs.init("W0m4iaMF_-hyk9hqB"); // 使用新的公钥
-        
-        // 诊询表单提交处理
-        document.getElementById('diagnosis-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            
-            // 收集表单数据
-            const data = {
-                name: document.getElementById("name").value,
-                title: document.getElementById("diagnosis-symptom").value,
-                message: document.getElementById("symptom-details").value,
-                email: document.getElementById("email").value,
-                time: document.querySelector("input[name='time']").value
+    <!-- iframe内容 -->
+    <iframe id="zhenxun-iframe" src="https://zhenxun.sm.doctor/" width="100%" height="350px" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" sandbox="allow-same-origin allow-scripts" title="SMD·AI" style="background-color: transparent; max-width: 600px; min-width: 320px;" allowtransparency="true">
+        Your browser does not support the iframe tag, and cannot display the embedded content.
+    </iframe>
+    <!-- 加载动画样式 -->
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    <!-- 加载动画脚本 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const iframe = document.getElementById('zhenxun-iframe');
+            const loader = document.getElementById('iframe-loader');
+            // 设置加载动画容器的初始高度
+            loader.style.height = '350px';
+            // 监听iframe加载完成事件
+            iframe.onload = function() {
+                // 隐藏加载动画
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 500); // 稍微延迟以确保内容完全显示
+                // 加载完成后，向iframe发送消息请求高度调整
+                try {
+                    iframe.contentWindow.postMessage({ type: 'request-height' }, 'https://zhenxun.sm.doctor/');
+                } catch (e) {
+                    console.log('Failed to send a height request message to the iframe', e);
+                }
             };
+            // 处理加载超时情况
+            setTimeout(() => {
+                if (loader && loader.style.display !== 'none') {
+                    loader.innerHTML = '<p style="color: #666; font-size: 16px;">Loading is taking longer than expected. Please try again later.</p>';
+                }
+            }, 5000);
+        });
+    </script>
+</div>
+</div>
+
+<script>
+// 获取当前主题模式的函数
+function getCurrentTheme() {
+    return document.documentElement.classList.contains("dark") ? "dark" : "light";
+}
+
+// 向iframe发送主题模式信息
+function sendThemeToIframe(forceUpdate = false) {
+    const iframe = document.getElementById("zhenxun-iframe");
+    const currentTheme = getCurrentTheme();
+    
+    // 避免重复发送相同的主题
+    if (!forceUpdate && iframe.lastTheme === currentTheme) {
+        return;
+    }
+    
+    if (iframe && iframe.contentWindow) {
+        try {
+            // 设置iframe的className以直接应用样式
+            iframe.className = currentTheme;
             
-            console.log("Sending data:", data);
+            // 尝试直接发送消息
+            iframe.contentWindow.postMessage({ 
+                type: 'theme-change',
+                theme: currentTheme,
+                timestamp: Date.now()
+            }, "https://zhenxun.sm.doctor/");
             
-            // 显示进度提示框 - 设置为flex确保正确居中
-            document.getElementById('progress-modal').style.display = 'flex';
+            // 记录最后发送的主题
+            iframe.lastTheme = currentTheme;
             
-            // 使用emailjs发送表单数据
-            emailjs.send("service_icloud", "zhenxun_template", data) // 使用新的service ID和template ID
-                .then(() => {
-                    console.log('Sent successfully!');
-                    // Hide progress modal
-                    document.getElementById('progress-modal').style.display = 'none';
-                    // Show success modal
-                    document.getElementById('success-modal').style.display = 'flex';
-                }, (error) => {
-                    console.log('Failed to send...', error);
-                    // Hide progress modal
-                    document.getElementById('progress-modal').style.display = 'none';
-                    // Show error modal and set error message
-                    document.getElementById('error-message').textContent = `Failed to send: ${error.text}`;
-                    document.getElementById('error-modal').style.display = 'flex';
-                });
-        }); // Close submit event listener
+            console.log(`Theme has been sent to the iframe: ${currentTheme}`);
+        } catch (e) {
+            console.error("Failed to send a message to the iframe:", e);
+            // 添加重试机制
+            setTimeout(() => sendThemeToIframe(true), 500);
+        }
+    }
+}
+
+// 检查iframe是否已加载完成
+function checkIframeLoaded() {
+    const iframe = document.getElementById("zhenxun-iframe");
+    
+    if (iframe) {
+        // 检查iframe是否已加载完成
+        if (iframe.contentDocument && iframe.contentDocument.readyState === "complete") {
+            sendThemeToIframe(true);
+            return true;
+        }
         
-        // 成功提示框关闭处理
-        document.getElementById('success-modal').addEventListener('click', function() {
-            document.getElementById('success-modal').style.display = 'none';
-            // Close modal and reset form
-            document.getElementById('diagnosis-modal').style.display = 'none';
-            document.getElementById('diagnosis-form').reset();
+        // 如果未加载完成，继续检查
+        setTimeout(checkIframeLoaded, 100);
+    }
+    
+    return false;
+}
+
+// 处理来自iframe的响应消息
+function handleIframeMessage(event) {
+    // 验证消息来源
+    if (event.origin !== "https://zhenxun.sm.doctor/") {
+        return;
+    }
+    
+    // 处理iframe的确认消息
+    if (event.data && event.data.type === 'theme-ack') {
+        console.log(`The iframe has confirmed receipt of the theme: ${event.data.theme}`);
+    }
+    
+    // 处理iframe的高度调整请求
+    if (event.data && event.data.type === 'height-update' && typeof event.data.height === 'number') {
+        const iframe = document.getElementById('zhenxun-iframe');
+        try {
+            // 设置一个最小高度以防止内容为空时iframe完全消失
+            const minHeight = 350;
+            // 应用从iframe接收到的高度，确保不小于最小高度
+            iframe.style.height = Math.max(minHeight, event.data.height + 20) + 'px';
+        } catch (e) {
+            console.error('Failed to adjust the iframe height via the message:', e);
+        }
+    }
+}
+
+// 页面加载完成后设置初始主题
+window.addEventListener("DOMContentLoaded", function() {
+    // 设置消息监听器来接收iframe的响应
+    window.addEventListener("message", handleIframeMessage, false);
+    
+    // 使用更可靠的iframe加载检测
+    checkIframeLoaded();
+    
+    // 同时设置一个超时，确保主题最终会被发送
+    setTimeout(() => sendThemeToIframe(true), 1000);
+    
+    // 监听主题切换事件
+    const switcher = document.getElementById("appearance-switcher");
+    const switcherMobile = document.getElementById("appearance-switcher-mobile");
+    
+    // 增强的事件监听方式
+    function setupThemeSwitcher(element) {
+        if (!element) return;
+        
+        // 使用更可靠的事件监听方式
+        element.addEventListener('click', function() {
+            // 使用setTimeout确保主题切换完成后再发送
+            setTimeout(() => sendThemeToIframe(), 0);
+        });
+    }
+    
+    setupThemeSwitcher(switcher);
+    setupThemeSwitcher(switcherMobile);
+    
+    // 监听系统主题变化
+    if (window.matchMedia) {
+        const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+        
+        mediaQuery.addEventListener("change", function() {
+            // 延迟一下确保系统主题变化完成
+            setTimeout(() => sendThemeToIframe(), 100);
         });
         
-        // 成功提示框确定按钮处理
-        document.getElementById('success-confirm-btn').addEventListener('click', function() {
-            document.getElementById('success-modal').style.display = 'none';
-            // Close modal and reset form
-            document.getElementById('diagnosis-modal').style.display = 'none';
-            document.getElementById('diagnosis-form').reset();
-        });
-        
-        // 失败提示框关闭处理
-        document.getElementById('error-modal').addEventListener('click', function() {
-            document.getElementById('error-modal').style.display = 'none';
-        });
-        
-        // 防止点击内容内部时关闭模态框
-        document.querySelectorAll('#success-modal > div, #error-modal > div').forEach(function(modalContent) {
-            modalContent.addEventListener('click', function(event) {
-                event.stopPropagation();
-            });
-        });
-        
-        // 显示诊询表单按钮处理
-        document.getElementById('show-diagnosis-form').addEventListener('click', function() {
-            const symptom = document.getElementById('symptom-input').value;
-            // If input is empty, set default value to "Symptom Name"
-            document.getElementById('diagnosis-symptom').value = symptom || 'Symptom Name';
-            document.getElementById('diagnosis-modal').style.display = 'block';
-        });
-        
-        // 点击模态框外部关闭
-        document.getElementById('diagnosis-modal').addEventListener('click', function(event) {
-            // If clicking on the modal itself (background) and not its children
-            if (event.target === this) {
-                this.style.display = 'none';
+        // 立即发送一次当前系统主题
+        sendThemeToIframe();
+    }
+    
+    // 监听DOM变化，检测主题类名的直接修改
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.attributeName === 'class') {
+                // 延迟一下确保DOM更新完成
+                setTimeout(() => sendThemeToIframe(), 0);
             }
         });
-    };
+    });
+    
+    // 开始观察根元素的class属性变化
+    observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['class']
+    });
+});
 </script>
+
+
+
+<div style="width: 100%; text-align: left; margin-top: 0px;">{{< list cardView=true limit=3 where="Type" value="sample" >}}</div>
