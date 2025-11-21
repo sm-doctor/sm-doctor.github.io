@@ -5,6 +5,10 @@
 theme = "blowfish"
 baseURL = "https://sm.doctor/"
 defaultContentLanguage = "en"
+# 启用多语言URL支持
+defaultContentLanguageInSubdir = true
+# 启用内容语言折叠，这有助于解决多语言URL问题
+multilingualMode = "perPage"
 
 pluralizeListTitles = false # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
@@ -36,12 +40,15 @@ googleAnalytics = ""
   priority = 0.5
 
 [outputs]
+  # 确保首页有完整的输出格式
   home = ["HTML", "RSS", "JSON"]
   # 确保section页面也有正确的输出格式
   section = ["HTML", "RSS"]
   # 确保语言版本的section页面也有正确的输出格式
   taxonomy = ["HTML", "RSS"]
   term = ["HTML", "RSS"]
+  # 为单页内容添加输出格式
+  page = ["HTML"]
 
 [related]
   threshold = 0
@@ -52,19 +59,23 @@ googleAnalytics = ""
   cleanDestinationDir = true
   # 确保没有.html扩展名的URL也能正确映射到对应的HTML文件
   trailingSlash = true
+  # 启用对目录索引页的支持
+  indexPages = true
+  # 启用回退到默认语言的功能
+  defaultContentLanguage = "en"
 
 # 配置URL永久链接结构
 [permalinks]
   # 为主要内容类型设置永久链接
   # 确保URL以斜杠结尾，这对目录形式的URL访问至关重要
-  posts = "/posts/:filename/"
-  blog = "/blog/:filename/"
-  docs = "/docs/:filename/"
+  posts = "/:language/posts/:filename/"
+  blog = "/:language/blog/:filename/"
+  docs = "/:language/docs/:filename/"
   # 添加静态页面的永久链接配置
-  About = "/About/"
-  Contact = "/Contact/"
-  Blog = "/Blog/"
-  FAQs = "/FAQs/"
+  About = "/:language/About/"
+  Contact = "/:language/Contact/"
+  Blog = "/:language/Blog/"
+  FAQs = "/:language/FAQs/"
 
     [[related.indices]]
         name = "tags"
