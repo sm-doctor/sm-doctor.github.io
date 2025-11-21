@@ -51,7 +51,6 @@ googleAnalytics = ""
 [server]
   cleanDestinationDir = true
   # 确保没有.html扩展名的URL也能正确映射到对应的HTML文件
-  # 强制在URL末尾添加斜杠，这对目录形式的URL访问至关重要
   trailingSlash = true
 
 # 配置URL永久链接结构
@@ -66,8 +65,6 @@ googleAnalytics = ""
   Contact = "/Contact/"
   Blog = "/Blog/"
   FAQs = "/FAQs/"
-  # 强制所有URL都以斜杠结尾
-  forceTrailingSlash = true
 
     [[related.indices]]
         name = "tags"
