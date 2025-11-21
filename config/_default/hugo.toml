@@ -37,10 +37,25 @@ googleAnalytics = ""
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+  # 确保section页面也有正确的输出格式
+  section = ["HTML", "RSS"]
 
 [related]
   threshold = 0
   toLower = false
+
+# 启用文件服务器模式，这有助于在GitHub Pages上正确处理URL
+[server]
+  cleanDestinationDir = true
+  # 确保没有.html扩展名的URL也能正确映射到对应的HTML文件
+
+# 配置URL永久链接结构
+[permalinks]
+  # 为主要内容类型设置永久链接
+  posts = "/posts/:year/:month/:day/:filename/"
+  blog = "/blog/:filename/"
+  docs = "/docs/:sections[1:]/:filename/"
+  # 这将确保URL可以不带.html扩展名访问
 
     [[related.indices]]
         name = "tags"
