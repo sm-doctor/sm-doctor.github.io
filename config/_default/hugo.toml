@@ -39,6 +39,9 @@ googleAnalytics = ""
   home = ["HTML", "RSS", "JSON"]
   # 确保section页面也有正确的输出格式
   section = ["HTML", "RSS"]
+  # 确保语言版本的section页面也有正确的输出格式
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
 
 [related]
   threshold = 0
