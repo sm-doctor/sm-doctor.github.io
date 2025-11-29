@@ -11,7 +11,7 @@ description: ""
       {{< icon "logo" >}}
     </div>
     <h1 style="text-align: center; font-weight: bold; font-size: clamp(18px, 3vw, 30px); margin: 5px 0 0; overflow: hidden; line-height: 1.2;">
-      炎黄健康-AI-免费诊询
+      炎黄健康 AI 免费问诊
     </h1>
   </div>
 </header>
