@@ -13,7 +13,7 @@ defaultFeaturedImage = "d_featured.jpg"
 highlightCurrentMenuArea = false
 smartTOC = true
 smartTOCHideUnfocusedChildren = false
-mainSections = ["blog"]
+mainSections = ["Blog"]
 
 [header]
   layout = "fixed"
