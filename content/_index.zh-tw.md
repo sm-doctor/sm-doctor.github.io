@@ -27,8 +27,8 @@ description: ""
         <!-- 載入文字 -->
         <p style="margin: 0; color: #666; font-size: 15px;">載入中...</p>
     </div>
-    <!-- iframe內容 -->
-    <iframe id="zhenxun-iframe" src="https://zhenxun.sm.doctor/index-zh-tw.html" width="100%" height="350px" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" sandbox="allow-same-origin allow-scripts" title="SMD·AI" style="background-color: transparent; max-width: 600px; min-width: 320px;" allowtransparency="true">
+    <!-- iframe内容 -->
+    <iframe id="zhenxun-iframe" src="https://zhenxun.sm.doctor/index-zh-tw.html" height="350px" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" sandbox="allow-same-origin allow-scripts" title="SMD·AI" style="width: 600px; margin: 0 auto; background-color: transparent; box-sizing: border-box; display: block;" allowtransparency="true">
         您的瀏覽器不支持iframe標籤，無法顯示嵌入內容。
     </iframe>
     <!-- 載入動畫樣式 -->
@@ -36,6 +36,19 @@ description: ""
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+        /* 直接在页面中控制iframe的宽度 */
+        #zhenxun-iframe {
+            width: 600px !important;
+            margin: 0 auto !important;
+            box-sizing: border-box !important;
+            display: block !important;
+        }
+        /* 响应式设计 */
+        @media (max-width: 600px) {
+            #zhenxun-iframe {
+                width: 100% !important;
+            }
         }
     </style>
     <!-- 載入動畫腳本 -->
@@ -214,5 +227,3 @@ window.addEventListener("DOMContentLoaded", function() {
 </script>
 
 
-
-<div style="width: 100%; text-align: left; margin-top: 0px;">{{< list cardView=true limit=3 where="Type" value="sample" >}}</div>

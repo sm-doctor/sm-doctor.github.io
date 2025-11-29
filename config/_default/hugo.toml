@@ -61,13 +61,10 @@ googleAnalytics = ""
   # 为主要内容类型设置永久链接
   # 确保URL以斜杠结尾，这对目录形式的URL访问至关重要
   # Hugo会自动处理多语言URL前缀，不需要在permalinks中指定:language
-  posts = "/posts/:filename/"
-  blog = "/blog/:filename/"
-  docs = "/docs/:filename/"
+  Blog = "/Blog/:filename/"
   # 添加静态页面的永久链接配置
   About = "/About/"
   Contact = "/Contact/"
-  Blog = "/Blog/"
   FAQs = "/FAQs/"
 
     [[related.indices]]

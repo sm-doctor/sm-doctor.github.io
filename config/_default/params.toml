@@ -13,7 +13,7 @@ defaultFeaturedImage = "d_featured.jpg"
 highlightCurrentMenuArea = false
 smartTOC = true
 smartTOCHideUnfocusedChildren = false
-mainSections = [""]
+mainSections = ["blog"]
 
 [header]
   layout = "fixed"
@@ -28,7 +28,7 @@ mainSections = [""]
 [homepage]
   layout = "custom"
   homepageImage = "index_bg.jpg"
-  showRecent = false
+  showRecent = true
   showRecentItems = 9
   showMoreLink = false
   showMoreLinkDest = "blog"

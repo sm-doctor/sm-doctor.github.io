@@ -11,15 +11,15 @@ description: ""
       {{< icon "logo" >}}
     </div>
     <h1 style="text-align: center; font-weight: bold; font-size: clamp(18px, 3vw, 30px); margin: 5px 0 0; overflow: hidden; line-height: 1.2;">
-      一站式健康解决方案
+      炎黄健康-AI-免费诊询
     </h1>
   </div>
 </header>
 
 
 <!-- 嵌入zhenxun.sm.doctor -->
-<div style="display: flex; justify-content: center; width: 100%; padding: 20px 0;">
-  <div style="max-width: 600px; width: 100%; position: relative;">
+<div style="display: block; justify-content: center; width: 100%; padding: 20px 0;">
+  <div style="max-width: 600px !important; width: 100%; position: relative; display: block; margin: 0 auto;">
     <!-- 加载动画 -->
     <div id="iframe-loader" style="position: absolute;top: 0; left: 0; width: 100%; height: 350px; background-color: transparent; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 10; border-radius: 8px;">
         <!-- 加载动画图标 -->
@@ -28,7 +28,7 @@ description: ""
         <p style="margin: 0; color: #666; font-size: 15px;">加载中...</p>
     </div>
     <!-- iframe内容 -->
-    <iframe id="zhenxun-iframe" src="https://zhenxun.sm.doctor/index-zh-cn.html" width="100%" height="350px" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" sandbox="allow-same-origin allow-scripts" title="SMD·AI" style="background-color: transparent; max-width: 600px; min-width: 320px;" allowtransparency="true">
+    <iframe id="zhenxun-iframe" src="https://zhenxun.sm.doctor/index-zh-cn.html" height="350px" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" sandbox="allow-same-origin allow-scripts" title="SMD·AI" style="width: 600px; margin: 0 auto; background-color: transparent; box-sizing: border-box; display: block;" allowtransparency="true">
         您的浏览器不支持iframe标签，无法显示嵌入内容。
     </iframe>
     <!-- 加载动画样式 -->
@@ -37,6 +37,20 @@ description: ""
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        /* 直接在页面中控制iframe的宽度 */
+        #zhenxun-iframe {
+            width: 600px !important;
+            margin: 0 auto !important;
+            box-sizing: border-box !important;
+            display: block !important;
+        }
+        /* 响应式设计 */
+        @media (max-width: 600px) {
+            #zhenxun-iframe {
+                width: 100% !important;
+            }
+        }
+        /* 确保容器样式规则结束 */
     </style>
     <!-- 加载动画脚本 -->
     <script>
@@ -215,4 +229,4 @@ window.addEventListener("DOMContentLoaded", function() {
 
 
 
-<div style="width: 100%; text-align: left; margin-top: 0px;">{{< list cardView=true limit=3 where="Type" value="sample" >}}</div>
+

@@ -4,6 +4,13 @@ a {
   text-decoration: none !important;
 }
 
+/* 为iframe设置最大宽度限制，确保在大屏幕上居中显示 */
+iframe {
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  display: block !important;
+}
+
 /* 覆盖.active类的下划线样式 */
 .active {
   text-decoration-line: none !important;
@@ -33,7 +40,8 @@ nav a.active,
 
 /* 定义了首页section导入_index内容区块宽度 */
 .prose-sm {
-max-width: 100%;
+width: 100%;
+
 }
 
 /* 定义了首页社交媒体图标样式 */
