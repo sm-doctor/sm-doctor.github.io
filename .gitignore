@@ -1,10 +1,4 @@
 .hugo_build.lock
 /public/
 /.trae/
-/api/
-.env.example
-/node_modules/
 package-lock.json
-package.json
-README_test.md
-LOCAL_TEST_GUIDE.md

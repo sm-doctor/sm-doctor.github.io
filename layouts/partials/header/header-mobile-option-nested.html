@@ -100,80 +100,55 @@
 </style>
 
 <script>
-// 子菜单切换函数
-function toggleSubmenu(element) {
-  console.log('切换子菜单显示状态');
-  
-  // 切换当前项的active类
-  element.classList.toggle('active');
-  
-  // 获取下一个兄弟元素（子菜单）
-  var submenu = element.nextElementSibling;
-  console.log('找到子菜单元素:', submenu);
-  
-  // 如果找到子菜单，直接切换其display属性
-  if (submenu && submenu.classList.contains('list')) {
-    console.log('子菜单当前display:', submenu.style.display);
+// 确保在DOM加载完成后执行
+if (typeof document !== 'undefined') {
+  // 子菜单切换函数
+  function toggleSubmenu(element) {
+    // 添加/移除active类
+    element.classList.toggle('active');
     
-    // 切换显示/隐藏
-    if (submenu.style.display === 'block') {
-      submenu.style.display = 'none';
-      console.log('子菜单已隐藏');
-    } else {
-      submenu.style.display = 'block';
-      console.log('子菜单已显示');
-    }
-  }
-  
-  // 阻止事件冒泡，避免触发其他事件
-  if (event && typeof event.stopPropagation === 'function') {
-    event.stopPropagation();
-  }
-  
-  return false;
-}
-
-// 为包含链接的菜单项添加额外的点击处理
-function setupMenuLinks() {
-  // 获取所有带有URL的菜单项链接
-  const menuLinks = document.querySelectorAll('.collapsible-smd > a[href]:not([href="#"])');
-  
-  menuLinks.forEach(link => {
-    // 点击链接时，如果子菜单可见，则先隐藏子菜单
-    link.addEventListener('click', function(e) {
-      const parentLi = this.closest('.collapsible-smd');
-      const submenu = parentLi.nextElementSibling;
-      
-      // 如果子菜单可见，先隐藏它
-      if (submenu && submenu.style.display === 'block') {
+    // 获取下一个兄弟元素（子菜单ul）
+    var submenu = element.nextElementSibling;
+    
+    // 切换子菜单的显示状态
+    if (submenu && submenu.classList.contains('list')) {
+      if (submenu.style.display === 'block') {
         submenu.style.display = 'none';
-        parentLi.classList.remove('active');
+      } else {
+        submenu.style.display = 'block';
       }
-      // 链接的默认行为（跳转）会正常执行
-    });
+    }
     
-    // 点击链接时阻止事件冒泡到父元素
-    link.addEventListener('click', function(e) {
-      if (typeof e.stopPropagation === 'function') {
-        e.stopPropagation();
-      }
-    });
+    // 阻止事件冒泡
+    if (window.event && typeof window.event.stopPropagation === 'function') {
+      window.event.stopPropagation();
+    }
+    
+    return false;
+  }
+  
+  // 页面加载完成后初始化
+  document.addEventListener('DOMContentLoaded', function() {
+    // 为包含链接的菜单项添加额外的点击处理
+    const menuLinks = document.querySelectorAll('.collapsible-smd > a');
+    if (menuLinks && menuLinks.forEach) {
+      menuLinks.forEach(link => {
+        // 点击链接时阻止事件冒泡到父元素
+        link.addEventListener('click', function(e) {
+          if (typeof e.stopPropagation === 'function') {
+            e.stopPropagation();
+          }
+        });
+      });
+    }
+    
+    // 确保所有子菜单初始状态为隐藏
+    const submenus = document.querySelectorAll('.list');
+    if (submenus && submenus.forEach) {
+      submenus.forEach(submenu => {
+        submenu.style.display = 'none';
+      });
+    }
   });
 }
-
-// 确保在页面加载后子菜单初始状态正确
-window.onload = function() {
-  console.log('页面加载完成，初始化子菜单');
-  
-  // 确保所有子菜单初始状态为隐藏
-  var submenus = document.querySelectorAll('.list');
-  console.log('找到子菜单数量:', submenus.length);
-  
-  for (var i = 0; i < submenus.length; i++) {
-    submenus[i].style.display = 'none';
-  }
-  
-  // 设置菜单项链接的处理
-  setupMenuLinks();
-};
 </script>

@@ -7,7 +7,7 @@ description: ""
 <!-- LOGO与HEADING 中文 -->
 <header style="width: 100%; display: flex; justify-content: center; align-items: center; padding: 0;">
   <div style="width: 100%; max-width: 600px; min-width: 300px; display: flex; flex-direction: column; align-items: center;">
-    <div style="color: inherit; font-size: clamp(65px, 15vw, 80px); display: flex; align-items: center; justify-content: center;">
+    <div style="color: inherit; font-size: clamp(75px, 15vw, 80px); display: flex; align-items: center; justify-content: center;">
       {{< icon "logo" >}}
     </div>
     <h1 style="text-align: center; font-weight: bold; font-size: clamp(18px, 3vw, 30px); margin: 5px 0 0; overflow: hidden; line-height: 1.2;">
