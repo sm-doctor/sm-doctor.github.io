@@ -28,10 +28,10 @@ mainSections = ["blog"]
 [homepage]
   layout = "custom"
   homepageImage = "index_bg.jpg"
-  showRecent = true
+  showRecent = false
   showRecentItems = 9
   showMoreLink = false
-  showMoreLinkDest = "blog"
+  showMoreLinkDest = ""
   cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = true
