@@ -35,19 +35,19 @@ name = "项目"
 weight = 4
 
   [[main]]
-  name = "1、HHI人类健康计划"
+  name = "1、SMD正觉训练营"
   parent = "项目"
   weight = 41
-  pageRef = "#"
+  pageRef = "/whitepaper/smd-club/"
 
   [[main]]
-  name = "2、SMD正觉训练营"
+  name = "2、SMD标准化理疗培训班"
   parent = "项目"
   weight = 42
-  pageRef = "/whitepaper/smd-club/"
+  pageRef = "#"
   
   [[main]]
-  name = "3、SMD·AI人工智能"
+  name = "3、SMD人工智能"
   parent = "项目"
   weight = 43
   pageRef = "/whitepaper/smd-ai/"
@@ -65,21 +65,21 @@ weight = 4
   pageRef = "/whitepaper/smd-center/"
   
   [[main]]
-  name = "5、SMD大健康产业园"
+  name = "6、SMD大健康产业园"
   parent = "项目"
-  weight = 45
+  weight = 46
   pageRef = "/whitepaper/smd-park/"
   
   [[main]]
-  name = "6、SMD社区康养综合体"
+  name = "7、SMD社区康养综合体"
   parent = "项目"
-  weight = 46
+  weight = 47
   pageRef = "#"
   
   [[main]]
-  name = "7、SMD国际健康学院"
+  name = "8、SMD国际健康学院"
   parent = "项目"
-  weight = 47
+  weight = 48
   pageRef = "/whitepaper/smd-college/"
 
 [[main]]

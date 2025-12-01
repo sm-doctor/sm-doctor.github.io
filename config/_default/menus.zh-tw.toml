@@ -23,57 +23,57 @@ weight = 3
   parent = "理論"
   pageRef = "wiki"
   weight = 32
-      
-  [[main]]
-  name = "HHI專案百科"
-  parent = "理論"
-  url = "https://github.com/sm-doctor/sm-doctor.github.io/wiki/"
-  weight = 33
 
 [[main]]
 name = "專案"
-weight = 5
+weight = 4
 
   [[main]]
-  name = "教練計劃"
+  name = "1、SMD正覺訓練營"
   parent = "專案"
-  weight = 51
+  weight = 41
   pageRef = "/whitepaper/smd-club/"
+
+  [[main]]
+  name = "2、SMD標準化理療培訓班"
+  parent = "專案"
+  weight = 42
+  pageRef = "#"
   
   [[main]]
-  name = "人工智能"
+  name = "3、SMD人工智能"
   parent = "專案"
-  weight = 52
+  weight = 43
   pageRef = "/whitepaper/smd-ai/"
   
   [[main]]
-  name = "連鎖醫館"
+  name = "4、SMD連鎖醫館"
   parent = "專案"
-  weight = 53
+  weight = 44
   pageRef = "/whitepaper/smd-medical-hall/"
   
   [[main]]
-  name = "療養中心"
+  name = "5、SMD療養中心"
   parent = "專案"
-  weight = 54
+  weight = 45
   pageRef = "/whitepaper/smd-center/"
   
   [[main]]
-  name = "大健康產業園"
+  name = "6、SMD大健康產業園"
   parent = "專案"
-  weight = 55
+  weight = 46
   pageRef = "/whitepaper/smd-park/"
   
   [[main]]
-  name = "社區康養綜合體"
+  name = "7、SMD社區康養綜合體"
   parent = "專案"
-  weight = 56
+  weight = 47
   pageRef = ""
   
   [[main]]
-  name = "生命健康學院"
+  name = "8、SMD生命健康學院"
   parent = "專案"
-  weight = 57
+  weight = 48
   pageRef = "/whitepaper/smd-college/"
 
 [[main]]
