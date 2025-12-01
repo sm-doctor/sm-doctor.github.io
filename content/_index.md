@@ -6,8 +6,8 @@ description: ""
 
 <!-- LOGO与HEADING 中文 -->
 <header style="width: 100%; display: flex; justify-content: center; align-items: center; padding: 0;">
-  <div style="width: 100%; max-width: 600px; min-width: 300px; display: flex; flex-direction: column; align-items: center;">
-    <div style="color: inherit; font-size: clamp(55px, 15vw, 80px); display: flex; align-items: center; justify-content: center;">
+  <div style="width: 100%; max-width: 600px; display: flex; flex-direction: column; align-items: center;">
+    <div style="color: inherit; font-size: clamp(75px, 15vw, 80px); display: flex; align-items: center; justify-content: center;">
       {{< icon "logo" >}}
     </div>
     <h1 style="text-align: center; font-weight: bold; font-size: clamp(18px, 3vw, 30px); margin: 5px 0 0; overflow: hidden; line-height: 1.2;">
@@ -21,14 +21,14 @@ description: ""
 <div style="display: flex; justify-content: center; width: 100%; padding: 20px 0;">
   <div style="max-width: 600px; width: 100%; position: relative;">
     <!-- 加载动画 -->
-    <div id="iframe-loader" style="position: absolute;top: 0; left: 0; width: 100%; height: 350px; background-color: transparent; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 10; border-radius: 8px;">
+    <div id="iframe-loader" style="position: absolute;top: 0; left: 0; width: 100%; height: 370px; background-color: transparent; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 10; border-radius: 8px;">
         <!-- 加载动画图标 -->
         <div style="border: 3px solid #f3f3f3; border-top: 3px solid #296a29; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin-bottom: 15px;"></div>
         <!-- 加载文字 -->
         <p style="margin: 0; color: #666; font-size: 15px;">Loading...</p>
     </div>
     <!-- iframe内容 -->
-    <iframe id="zhenxun-iframe" src="https://zhenxun.sm.doctor/index.html" height="350px" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" sandbox="allow-same-origin allow-scripts" title="SMD·AI" style="width: 600px; margin: 0 auto; background-color: transparent; box-sizing: border-box; display: block;" allowtransparency="true">
+    <iframe id="zhenxun-iframe" src="https://zhenxun.sm.doctor/index.html" height="370px" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" sandbox="allow-same-origin allow-scripts" title="SMD·AI" style="margin: 0 auto; background-color: transparent; box-sizing: border-box; display: block;" allowtransparency="true">
         Your browser does not support the iframe tag, and cannot display the embedded content.
     </iframe>
     <!-- 加载动画样式 -->
