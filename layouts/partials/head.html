@@ -8,7 +8,7 @@
   {{/* Title */}}
   {{ if .IsHome -}}
   <title>{{ .Site.Title | emojify }}{{ i18n "global.SMD_HHI" }}</title>
-  <meta name="title" content="{{ .Site.Title | emojify }}" />
+  <meta name="title" content="{{ .Site.Title | emojify }}{{ i18n "global.SMD_HHI" }}" />
   {{- else -}}
   <title>{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}</title>
   <meta name="title" content="{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}" />
