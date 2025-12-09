@@ -1,6 +1,6 @@
 global:
   language: "EN"
-  SMD_HHI: " - Human Health Initiative"
+  SMD_HHI: " - Human Health Plan"
 
 article:
   anchor_label: "Anchor"
@@ -35,7 +35,7 @@ article:
       2. **SMD Core Philosophy**: First principles of health, health systems engineering, and integrated healing through healthcare and wellness.
       3. **SMD Therapy Characteristics**: Organic integration of Chinese and Western medical therapies, psychological therapy, and natural therapies.
       4. **SMD Evidence-Based Medicine**: A closed-loop medical system integrating SMD-Methodology-Driven case analysis, treatment planning, and outcome validation.
-      5. **Human Health Initiative**: A comprehensive health initiative based on SMD methodology.
+      5. **Human Health Plan**: A comprehensive health initiative based on SMD methodology.
     ---
 
 author:
@@ -82,7 +82,7 @@ sharing:
   telegram: "Share via Telegram"
 
 shortcode:
-  recent_articles: "『Human Health Initiative』Project Blog"
+  recent_articles: "『Human Health Plan』Project Blog"
 
 recent:
   show_more: "Project Blog"
