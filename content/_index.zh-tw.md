@@ -10,9 +10,9 @@ description: ""
     <div style="color: inherit; font-size: clamp(75px, 15vw, 80px); display: flex; align-items: center; justify-content: center;">
       {{< icon "logo" >}}
     </div>
-    <h1 style="text-align: center; font-weight: bold; font-size: clamp(18px, 3vw, 30px); margin: 5px 0 0; overflow: hidden; line-height: 1.2;">
-      一站式健康解決方案
-    </h1>
+    <div class="text-justify-responsive">
+      Systemic Medicine Doctor
+    </div>
   </div>
 </header>
 
