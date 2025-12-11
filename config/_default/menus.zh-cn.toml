@@ -95,7 +95,7 @@ weight = 6
 [[main]]
   identifier = "github"
   pre = "github"
-  url = "https://github.com/HHI-Foundation/home"
+  url = "https://github.com/hhpf/"
   weight = 7
 
 
