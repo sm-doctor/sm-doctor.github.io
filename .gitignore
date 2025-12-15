@@ -2,3 +2,4 @@
 /public/
 /.trae/
 package-lock.json
+deploy.bat
