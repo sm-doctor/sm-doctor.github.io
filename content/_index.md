@@ -11,7 +11,7 @@ description: ""
       {{< icon "logo" >}}
     </div>
     <div class="text-justify-responsive">
-      Systemic Medicine Doctor
+      Systems Medicine Doctor
     </div>
   </div>
 </header>
