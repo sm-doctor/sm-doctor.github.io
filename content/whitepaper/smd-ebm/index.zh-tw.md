@@ -169,3 +169,4 @@ showComments: false
 
 ## 三、什麼是SMD循證醫學？
 >SMD循證醫學（SMD Evidence-based Medicine）是以SMD方法論（健康的第一性原理哲學/健康系統工程方法論/醫養一體化療法）分析療愈案例並制定療愈方案與獲取反饋的醫學。
+

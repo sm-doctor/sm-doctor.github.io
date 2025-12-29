@@ -25,7 +25,7 @@ showComments: false
 ### 二、全球化总计划名称
 >人类健康计划<br>
 >SM.DOCTOR<br>
->Systemic Medicine Doctor
+>Systems Medicine Doctor
 
 ---
 
@@ -54,3 +54,4 @@ showComments: false
 >SMD医院（康复中心）/SMD研究院/SMD产业园/SMD医学院。
 
 ---
+

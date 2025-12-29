@@ -5,7 +5,7 @@ externalUrl: "whitepaper/smd-methodology/#3"
 draft: false
 weight: 3
 description: ""
-tags: ["Health Methodology","Systemic Medicine","Integrative Therapy"]
+tags: ["Health Methodology","Systems Medicine","Integrative Therapy"]
 showViews: false
 showLikes: false
 showAuthor: true
@@ -16,3 +16,4 @@ sharingLinks: false
 showComments: false
 type: 'sample'
 ---
+

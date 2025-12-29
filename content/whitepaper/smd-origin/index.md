@@ -34,3 +34,4 @@ showComments: false
 
 ### IV. New Scientific Revolution
 > The scientific research motivation of the SMD project. The development of life sciences is an inevitable trend in the advancement of human civilization, and the evolution of medicine is inevitably the development of life sciences. (The development of traditional Chinese medicine <science> will not only trigger a revolution in human cognition but also a revolution in modern science —— Qian Xuesen).
+

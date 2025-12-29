@@ -18,7 +18,7 @@ showComments: false
 
 
  >  如何创建全球性的“人类健康计划”公益基金项目（如何快速获得资金）？基金会工作定位如下：
- >  一、SMD（Systemic Medicine Doctor）健康的第一性原理与系统医学整合疗法理论体系构建;
+ >  一、SMD（Systems Medicine Doctor）健康的第一性原理与系统医学整合疗法理论体系构建;
  >  二、健康指标九个层面的量化标准化工程与健康疗愈系统工程方法论与医养一体化疗愈技术体系构建；九个层面指标为：
  >  1.三力：精力/体力/脑力；
  >  2.三畅：心情舒畅/经络通畅（身体酸麻胀痛痒）/机能顺畅（大小便呼吸循环等）；
@@ -43,14 +43,14 @@ showComments: false
 
 ---
 
-## **核心产出 1：SMD（Systemic Medicine Doctor）系统医学理论体系**
+## **核心产出 1：SMD（Systems Medicine Doctor）系统医学理论体系**
 
 这个部分属于 **知识体系建设**，需要包装成：
 
 ### ✔ 可发表
 
 * 白皮书（Scientific White Paper）
-* 系统医学框架（Systemic Medicine Framework）
+* 系统医学框架（Systems Medicine Framework）
 * 全球健康指标标准（Global Health Indicators Model）
 
 ### ✔ 可培训
@@ -140,7 +140,7 @@ showComments: false
 
 ---
 
-## **主体 2：全球研究机构（Global Institute for Systemic Medicine）**
+## **主体 2：全球研究机构（Global Institute for Systems Medicine）**
 
 这是科研主体，用来：
 
@@ -410,7 +410,7 @@ CSR 的优势：
 
 包含四大核心：
 
-1. **SMD 理论体系（Systemic Medicine Doctor）**
+1. **SMD 理论体系（Systems Medicine Doctor）**
 2. **九大健康指标标准化工程（全球统一健康模型）**
 3. **全球自然疗法 A/B 实验与证据库（Crowd Evidence Platform）**
 4. **SMD-AI 全球免费会诊系统（sm.doctor）**
@@ -486,7 +486,7 @@ SMD-AI 会诊系统每天能采集：
 
 # **Human Health Project — 全球人类健康计划（HHP）**
 
-**Powered by Systemic Medicine Doctor (SMD)**
+**Powered by Systems Medicine Doctor (SMD)**
 **with SMD-AI Global Consultation System (sm.doctor)**
 
 ---
@@ -1503,7 +1503,7 @@ SMD-AI（sm.doctor）可以成为：
 
 ### 2.1 健康的第一性原理（First Principles of Health）
 
-健康不是结果，而是系统稳定性的表达。一个生命体是否健康，最终取决于其系统是否处于**稳定、通畅、充能、有序、可调节**的状态。SMD（Systemic Medicine Doctor）提出：
+健康不是结果，而是系统稳定性的表达。一个生命体是否健康，最终取决于其系统是否处于**稳定、通畅、充能、有序、可调节**的状态。SMD（Systems Medicine Doctor）提出：
 
 > **健康本质上是生命系统能量流、信息流、物质流维持动态平衡的能力。**
 
@@ -1517,7 +1517,7 @@ SMD-AI（sm.doctor）可以成为：
 
 ### 2.2 SMD系统医学：连接科学、工程与自然疗法的医学体系
 
-SMD 系统医学（Systemic Medicine Doctor）是一种新一代医学范式，结合：
+SMD 系统医学（Systems Medicine Doctor）是一种新一代医学范式，结合：
 
 * **系统生物学（Systems Biology）**
 * **复杂系统科学（Complex Systems Science）**
@@ -2176,3 +2176,4 @@ SMD白皮书的最终愿景是：
 * 健康是每个人可掌握的能力
 
 **人类第一次拥有了构建“健康文明”的可能性。**
+

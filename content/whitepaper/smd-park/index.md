@@ -33,3 +33,4 @@ The healthy home furnishings industry is a composite industry that takes enhanci
 
 ## IV. Demonstration Park for the Cultural and Creative Industry of a Healthy Lifestyle
 The cultural and creative industry of a healthy lifestyle is a composite industry that integrates health concepts, cultural connotations and creative designs. Through innovative carriers and digital technologies, it transforms healthy lifestyles into perceivable and consumable cultural products and services. Guided by the "Healthy China" strategy, this industry relies on the technological and communication advantages of the cultural and creative industry to form an ecological system covering areas such as the development of health IPs, the design of health products, and the integration of health culture and tourism. (The analysis content is provided by the Doubao large model). <br>
+

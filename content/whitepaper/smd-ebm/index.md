@@ -165,3 +165,4 @@ Evidence-Based Medicine (EBM) is a method of clinical medical practice that take
 ## III. What is SMD Evidence-Based Medicine?
 >SMD Evidence-based Medicine is a medicine that analyzes healing cases, formulates healing plans, and obtains feedback using the SMD methodology (the first-principle philosophy of health / the methodology of health systems engineering / the integrated therapy of medical care and health maintenance).
 
+

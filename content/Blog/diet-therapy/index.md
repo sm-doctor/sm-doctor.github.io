@@ -4,7 +4,7 @@ date: 2025-01-01
 weight: 
 draft: false
 description: ""
-tags: ["Methodology", "Systemic Therapy", "Integrative Therapy", "First Principles"]
+tags: ["Methodology", "Systems Therapy", "Integrative Therapy", "First Principles"]
 showViews: false
 showLikes: false
 showAuthor: true
@@ -26,7 +26,7 @@ showComments: false
 
 1. **Western Medicine Perspective: The Intestines as the Command Center of Immunity and Metabolism**  
    The view proposed by Hippocrates in the 4th century BC is now confirmed by microbiome research:  
-   - **Immune Defense**: 70%-80% of immune cells are located in the intestines. Once the intestinal barrier is damaged (such as "intestinal leakage syndrome"), endotoxins (LPS) entering the blood can trigger systemic chronic inflammation, which is closely related to obesity, diabetes, and autoimmune diseases.  
+   - **Immune Defense**: 70%-80% of immune cells are located in the intestines. Once the intestinal barrier is damaged (such as "intestinal leakage syndrome"), endotoxins (LPS) entering the blood can trigger systems chronic inflammation, which is closely related to obesity, diabetes, and autoimmune diseases.  
    - **Microbial Regulation**: The number of intestinal microorganisms exceeds 10 times that of human cells, and their genetic diversity affects nutrient synthesis, neurotransmitter (such as serotonin) secretion, and toxin metabolism. Microbial imbalance is associated with autism, depression, and even Alzheimer's disease.
 
 2. **Chinese Medicine Perspective: 'Fecal Toxins Entering the Blood' as the Origin of Various Diseases**  
@@ -88,10 +88,11 @@ Adjusting the diet according to the intestinal condition is the key to efficacy:
 
 From Hippocrates to *Huangdi Neijing*, the theory of intestinal health has been confirmed by science across thousands of years – **90% of chronic diseases are related to intestinal microbial imbalance**. As the most daily intervention, dietary therapy has the following values:  
 1. **Preventive**: Avoid "fecal toxins entering the blood" and "intestinal leakage" through dietary adjustments;  
-2. **Fundamental**: Replace drugs to repair the intestinal mucosa and avoid systemic inflammatory cascades;  
+2. **Fundamental**: Replace drugs to repair the intestinal mucosa and avoid systems inflammatory cascades;  
 3. **Holistic**: Simultaneously regulate immune, metabolic, and neural functions, in line with the core concept of Chinese medicine that "the spleen and stomach are the foundation of the acquired constitution."  
 
 > As *Neijing* emphasizes, "When the five flavors enter the mouth, they are stored in the stomach and intestines. The flavors are stored to nourish the five qi." Only by returning to the fundamental regulation of diet can we start from the intestines, the "source of all diseases," and truly achieve "when the righteous qi is stored within, evil cannot invade."
 
 </ol>
+
 

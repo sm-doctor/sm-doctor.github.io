@@ -20,3 +20,4 @@
 [mediaTypes]
   [mediaTypes."text/html"]
     charset = "UTF-8"
+

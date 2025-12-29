@@ -45,7 +45,7 @@ Constructing a digital ecosystem for holistic health:
 ## First Principles Thinking
 Applying first principles thinking to health, returning to the philosophical essence of TCM—"harmony between man and nature, the monism of qi, and the theory of yin-yang and the five elements":  
 1. **Foundational Level**: Tracing the ontology, epistemology, and methodology of TCM.  
-2. **Principles Level**: The systemic essence of life, the essence of interactions between matter, energy, and information in the environment, and the quantum field essence of the unity of man and nature.  
+2. **Principles Level**: The systems essence of life, the essence of interactions between matter, energy, and information in the environment, and the quantum field essence of the unity of man and nature.  
 3. **Application Level**: Practical implementation and application of integrated healthcare-elderly care system therapies.
 
 ---

@@ -4,7 +4,7 @@ date: 2025-01-01
 weight: 20
 draft: false
 description: ""
-tags: ["Methodology", "Health Methodology", "Health Philosophy", "Integrated Therapy", "Systemic Therapy", "First Principles"]
+tags: ["Methodology", "Health Methodology", "Health Philosophy", "Integrated Therapy", "Systems Therapy", "First Principles"]
 showViews: false
 showLikes: false
 showAuthor: true
@@ -121,7 +121,7 @@ Psychological and physiological - Subjective and objective - Inborn and acquired
 {{< /timelineItem >}}
 
 
-{{< timelineItem icon="check" header="VI. Integration of Medical Care and Health Care" subheader="Systemic Therapy Based on Matter/Energy/Information:"  badge="Methodology">}}
+{{< timelineItem icon="check" header="VI. Integration of Medical Care and Health Care" subheader="Systems Therapy Based on Matter/Energy/Information:"  badge="Methodology">}}
 Replicate the management methods of systems engineering: The DMAIC/DMADV methods for SMD health healing and SMD health management.
 {{< /timelineItem >}}
 
@@ -179,13 +179,13 @@ Systems engineering is the "top-level design" methodology for solving complex pr
 
 <ol>
 
-### 1. Systemic Therapy
+### 1. Systems Therapy
 
-> Systemic Medicine is an organically integrated healing method and a comprehensive treatment model that spans disciplines and theories. By organically combining multiple treatment methods, theoretical systems, or intervention means, it formulates personalized plans according to the multi-dimensional needs of individuals in terms of physiology, psychology, and society, so as to achieve more comprehensive and efficient treatment effects. Its core lies in breaking through the limitations of single therapies, emphasizing that "the whole is greater than the sum of its parts", and forming a systemic healing method. It is the organic integration of the effective parts of the four healing methods, namely the integration of medical care and health care, traditional Chinese and Western medical therapies, psychological therapies, and natural therapies, with different weighting strategies.
+> Systems Medicine is an organically integrated healing method and a comprehensive treatment model that spans disciplines and theories. By organically combining multiple treatment methods, theoretical systems, or intervention means, it formulates personalized plans according to the multi-dimensional needs of individuals in terms of physiology, psychology, and society, so as to achieve more comprehensive and efficient treatment effects. Its core lies in breaking through the limitations of single therapies, emphasizing that "the whole is greater than the sum of its parts", and forming a systems healing method. It is the organic integration of the effective parts of the four healing methods, namely the integration of medical care and health care, traditional Chinese and Western medical therapies, psychological therapies, and natural therapies, with different weighting strategies.
 
 ### 2. Core Principles
 1. **Personalized Integration**: Select suitable combinations of therapies according to individual characteristics (such as symptoms, cultural background, and values), rather than mechanically stacking them.
-2. **Systemic Perspective**: Pay attention to the interactions among physiology, psychology, and the social environment. For example, psychological problems may be related to physical diseases or social pressures, and comprehensive interventions are required.
+2. **Systems Perspective**: Pay attention to the interactions among physiology, psychology, and the social environment. For example, psychological problems may be related to physical diseases or social pressures, and comprehensive interventions are required.
 3. **Evidence-Based**: Prioritize methods that have been scientifically verified to be effective to ensure the rationality and safety of the integration.
 4. **Dynamic Adjustment**: Flexibly adjust the plan according to the progress of treatment to avoid rigidly following a fixed pattern.
 
@@ -211,7 +211,7 @@ Systems engineering is the "top-level design" methodology for solving complex pr
 | - Adapt to complex problems (such as comorbidities and multi-factor pathogenesis)<br>- Take into account both "symptom relief" and "overall health"<br>- Flexibly respond to individual differences | - High requirements for practitioners (need to master the theories and techniques of multiple therapies)<br>- Improper integration may lead to logical conflicts or dilution of therapeutic effects<br>- Lack of a unified evaluation standard, making it difficult to quantify the effects |
 
 ### 4. Conclusion
-> Systemic Medicine is an embodiment of the "people-oriented" concept in the modern health field. By breaking down disciplinary boundaries, it provides more comprehensive solutions to complex problems. However, its success depends on the professional integration ability of practitioners and the accurate grasp of individual needs. In the future, it needs to be further standardized and scientific within the framework of evidence-based medicine.
+> Systems Medicine is an embodiment of the "people-oriented" concept in the modern health field. By breaking down disciplinary boundaries, it provides more comprehensive solutions to complex problems. However, its success depends on the professional integration ability of practitioners and the accurate grasp of individual needs. In the future, it needs to be further standardized and scientific within the framework of evidence-based medicine.
 
 </ol>
 

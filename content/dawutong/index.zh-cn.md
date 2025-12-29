@@ -205,3 +205,4 @@ showComments: false
 ---
 
 {{< list cardView=true limit=9 where="Type" value="whitepaper" >}}
+
