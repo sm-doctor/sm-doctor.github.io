@@ -1,0 +1,23 @@
+# -- Markup --
+# These settings are required for the theme to function.
+
+[goldmark]
+[goldmark.renderer]
+  unsafe = true
+  encoding = "UTF-8"
+
+[highlight]
+  noClasses = false
+  guessSyntax = true
+  lineNumbersInTable = false
+  style = "dracula"
+
+[tableOfContents]
+  startLevel = 2
+  endLevel = 4
+
+# Ensure proper UTF-8 encoding for all content
+[mediaTypes]
+  [mediaTypes."text/html"]
+    charset = "UTF-8"
+

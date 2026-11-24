@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自动回复 - SMD系统疗法</title>
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); overflow: hidden;">
+        <!-- 邮件头部 -->
+        <div style="background: #0e560a; color: #ffffff; padding: 25px; text-align: center;">
+            <h1 style="margin: 0; font-size: 24px; font-weight: 500;">SMD系统疗法 - 自动回复</h1>
+        </div>
+        
+        <!-- 邮件主体 -->
+        <div style="padding: 25px;">
+            <!-- 问候语 -->
+            <div style="margin-bottom: 20px; font-size: 16px;">
+                尊敬的 {{name}} 用户：
+            </div>
+            
+            <!-- 通知信息 -->
+            <div style="background-color: #f8f9fa; border-left: 4px solid #000000; padding: 15px; margin-bottom: 25px; border-radius: 0 4px 4px 0;">
+                这是一封自动回复邮件，我们将在1-2个工作日内为您提供诊询回复，如有更多资料（包括附件）请回复此邮件提供。
+            </div>
+            
+            <!-- 常见问题折叠面板 -->
+            <div>
+                <h2 style="color: #141d15; margin-bottom: 15px; font-size: 18px;">常见问题解答</h2>
+                
+                <!-- 问题1 -->
+                <div style="margin-bottom: 15px; border: 1px solid #e0e0e0; border-radius: 6px; overflow: hidden; transition: box-shadow 0.3s ease;">
+                    <div id="header1" style="background-color: #f8f9fa; padding: 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; color: #333333; transition: background-color 0.3s ease;">
+                        <span style="color: #0c6206;">为什么说健康疗愈首先是认知升级？</span>
+                        <span id="arrow1" style="transition: transform 0.3s ease; display: inline-block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" style="width: 16px; height: 16px; fill: #666666;">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div id="content1" style="display: none; padding: 15px; background-color: #ffffff; border-top: 1px solid #f0f0f0; line-height: 1.8; font-size: 15.5px;">
+                        健康第一性原理：只有先升级对健康本质的认知，才能从根本上理解疾病的成因和疗愈的方向。错误的健康认知往往导致不当的生活方式和治疗选择。
+                    </div>
+                </div>
+                
+                <!-- 问题2 -->
+                <div style="margin-bottom: 15px; border: 1px solid #e0e0e0; border-radius: 6px; overflow: hidden; transition: box-shadow 0.3s ease;">
+                    <div id="header2" style="background-color: #f8f9fa; padding: 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; color: #333333; transition: background-color 0.3s ease;">
+                        <span style="color: #0c6206;">为什么疗愈的本质是激发自愈？</span>
+                        <span id="arrow2" style="transition: transform 0.3s ease; display: inline-block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" style="width: 16px; height: 16px; fill: #666666;">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div id="content2" style="display: none; padding: 15px; background-color: #ffffff; border-top: 1px solid #f0f0f0; line-height: 1.8; font-size: 15.5px;">
+                        自愈、抑制与重启是人体健康的三大机制。人体本身具有强大的自愈能力，真正有效的治疗应该是辅助和激发这种内在能力，而非单纯抑制症状。如果自愈机制被破坏，无论什么样的外部治疗都难以发挥根本作用。
+                    </div>
+                </div>
+                
+                <!-- 问题3 -->
+                <div style="margin-bottom: 15px; border: 1px solid #e0e0e0; border-radius: 6px; overflow: hidden; transition: box-shadow 0.3s ease;">
+                    <div id="header3" style="background-color: #f8f9fa; padding: 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; color: #333333; transition: background-color 0.3s ease;">
+                        <span style="color: #0c6206;">为什么当前医疗忽略了最重要因素？</span>
+                        <span id="arrow3" style="transition: transform 0.3s ease; display: inline-block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" style="width: 16px; height: 16px; fill: #666666;">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div id="content3" style="display: none; padding: 15px; background-color: #ffffff; border-top: 1px solid #f0f0f0; line-height: 1.8; font-size: 15.5px;">
+                        现代医学往往过于关注症状和局部病变，而忽略了人体作为一个整体系统的复杂性，以及生活方式、心理状态、环境因素等背景因素的重要影响。SMD系统疗法强调系统性思维和医养一体化方法，从整体角度解决健康问题。
+                    </div>
+                </div>
+                
+                <!-- 问题4 -->
+                <div style="margin-bottom: 15px; border: 1px solid #e0e0e0; border-radius: 6px; overflow: hidden; transition: box-shadow 0.3s ease;">
+                    <div id="header4" style="background-color: #f8f9fa; padding: 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; color: #333333; transition: background-color 0.3s ease;">
+                        <span style="color: #0c6206;">为什么疗愈要采用系统工程方法论？</span>
+                        <span id="arrow4" style="transition: transform 0.3s ease; display: inline-block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" style="width: 16px; height: 16px; fill: #666666;">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div id="content4" style="display: none; padding: 15px; background-color: #ffffff; border-top: 1px solid #f0f0f0; line-height: 1.8; font-size: 15.5px;">
+                        人体是一个复杂的系统，健康问题往往涉及多个相互关联的因素。系统工程方法论能够帮助我们：1）全面识别问题的各个维度；2）理解各因素之间的相互作用；3）设计综合解决方案；4）持续监测和调整治疗策略，从而实现更有效、更持久的健康改善。
+                    </div>
+                </div>
+                
+                <!-- 问题5 -->
+                <div style="margin-bottom: 15px; border: 1px solid #e0e0e0; border-radius: 6px; overflow: hidden; transition: box-shadow 0.3s ease;">
+                    <div id="header5" style="background-color: #f8f9fa; padding: 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; color: #333333; transition: background-color 0.3s ease;">
+                        <span style="color: #0c6206;">为什么诊断首先应该是性格诊断？</span>
+                        <span id="arrow5" style="transition: transform 0.3s ease; display: inline-block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" style="width: 16px; height: 16px; fill: #666666;">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div id="content5" style="display: none; padding: 15px; background-color: #ffffff; border-top: 1px solid #f0f0f0; line-height: 1.8; font-size: 15.5px;">
+                        性格模式深刻影响着我们的思维方式、情绪反应、行为习惯和生活选择，这些因素直接关系到身心健康。不同性格类型的人面临不同的健康风险和适应模式。通过性格诊断，我们能够更精准地理解个体健康问题的根源，制定个性化的干预方案，提高治疗效果。
+                    </div>
+                </div>
+                
+                <!-- 问题6 -->
+                <div style="margin-bottom: 15px; border: 1px solid #e0e0e0; border-radius: 6px; overflow: hidden; transition: box-shadow 0.3s ease;">
+                    <div id="header6" style="background-color: #f8f9fa; padding: 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; color: #333333; transition: background-color 0.3s ease;">
+                        <span style="color: #0c6206;">为什么要通过疗养的方式来解决90%以上健康问题？</span>
+                        <span id="arrow6" style="transition: transform 0.3s ease; display: inline-block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" style="width: 16px; height: 16px; fill: #666666;">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div id="content6" style="display: none; padding: 15px; background-color: #ffffff; border-top: 1px solid #f0f0f0; line-height: 1.8; font-size: 15.5px;">
+                        研究表明，大多数健康问题（尤其是慢性疾病）与生活方式、环境因素和心理状态密切相关。疗养方法注重：1）调整生活习惯；2）改善环境因素；3）优化心理状态；4）增强体质。这些非药物干预手段能够从根本上解决健康问题的根源，减少对药物的依赖，降低副作用风险，实现真正的健康管理。
+                    </div>
+                </div>
+                
+                <!-- 问题7 -->
+                <div style="margin-bottom: 15px; border: 1px solid #e0e0e0; border-radius: 6px; overflow: hidden; transition: box-shadow 0.3s ease;">
+                    <div id="header7" style="background-color: #f8f9fa; padding: 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; color: #333333; transition: background-color 0.3s ease;">
+                        <span style="color: #0c6206;">整合疗法与系统疗法的差异在哪里?</span>
+                        <span id="arrow7" style="transition: transform 0.3s ease; display: inline-block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" style="width: 16px; height: 16px; fill: #666666;">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div id="content7" style="display: none; padding: 15px; background-color: #ffffff; border-top: 1px solid #f0f0f0; line-height: 1.8; font-size: 15.5px;">
+                        整合疗法是将不同的治疗方法（如中医、西医、自然疗法等）简单组合使用。而系统疗法则强调：1）从系统视角理解健康问题；2）识别各要素间的相互作用；3）设计协同作用的综合方案；4）动态调整治疗策略。系统疗法不仅是方法的整合，更是思维方式的转变，注重整体大于部分之和的系统效应。
+                    </div>
+                </div>
+                
+                <!-- 问题8 -->
+                <div style="margin-bottom: 15px; border: 1px solid #e0e0e0; border-radius: 6px; overflow: hidden; transition: box-shadow 0.3s ease;">
+                    <div id="header8" style="background-color: #f8f9fa; padding: 15px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; color: #333333; transition: background-color 0.3s ease;">
+                        <span style="color: #0c6206;">为什么要采用医养一体化治疗方法？</span>
+                        <span id="arrow8" style="transition: transform 0.3s ease; display: inline-block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" style="width: 16px; height: 16px; fill: #666666;">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div id="content8" style="display: none; padding: 15px; background-color: #ffffff; border-top: 1px solid #f0f0f0; line-height: 1.8; font-size: 15.5px;">
+                        医疗和养生本质上是健康管理的两个方面，不能割裂。医养一体化强调：1）预防与治疗相结合；2）临床干预与日常生活管理相统一；3）短期治疗与长期健康维护相衔接；4）身体调理与心理调养并重。这种方法能够实现更全面、更持久的健康效果，特别适合慢性疾病管理和健康生活方式的建立。
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 邮件页脚 -->
+        <div style="background-color: #f8f9fa; padding: 20px; text-align: center; border-top: 1px solid #e0e0e0;">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <img src="https://sm.doctor/smd.png" alt="SMD系统疗法" style="width: 40px; height: 40px; margin-bottom: 10px;">
+                <div style="font-size: 16px; font-weight: bold; color: #144222;">系统疗法</div>
+                <div style="font-size: 15.5px; color: #999999; margin-top: 5px;">医养一体化的系统性健康解决方案</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 折叠面板交互脚本 -->
+    <script>
+        // 为所有折叠区域添加点击事件处理
+        for (let i = 1; i <= 8; i++) {
+            const header = document.getElementById(`header${i}`);
+            if (header) {
+                header.addEventListener('click', function() {
+                    const content = document.getElementById(`content${i}`);
+                    const arrow = document.getElementById(`arrow${i}`);
+                    
+                    // 切换内容显示状态
+                    if (content.style.display === 'none' || content.style.display === '') {
+                        content.style.display = 'block';
+                        arrow.style.transform = 'rotate(180deg)'; // 展开时朝上
+                    } else {
+                        content.style.display = 'none';
+                        arrow.style.transform = 'rotate(0deg)'; // 收起时朝下
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>

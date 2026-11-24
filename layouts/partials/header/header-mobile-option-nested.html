@@ -1,0 +1,154 @@
+{{/* ------定义有子菜单的导航项文字样式------ */}}
+<li class="collapsible-smd" onclick="toggleSubmenu(this)">
+    <a href="#" class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400" onclick="return false;">
+        {{ if .Pre }}
+        <span {{ if and .Pre .Name}} class="mr-1" {{ end }}>
+            {{ partial "icon.html" .Pre }}
+        </span>
+        {{ end }}
+        <p class="text-bg font-bg" title="{{ .Title }}">
+            {{ .Name | markdownify }}
+        </p>
+    </a>
+</li>
+
+{{/* 所有子菜单项放在一个ul.list容器中 */}}
+<ul class="list">
+{{ range .Children }}
+    {{/* ------定义有子菜单文字样式------ */}}
+    <li class="mt-1">
+        <a href="{{ .URL }}" {{ if or (strings.HasPrefix .URL "http:" ) (strings.HasPrefix .URL "https:" 
+            ) }} target="_blank" {{ end }} class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+            {{ if .Pre }}
+            <span {{ if and .Pre .Name}} class="mr-1" {{ end }}>
+                {{ partial "icon.html" .Pre }}
+            </span>
+            {{ end }}
+            <p class="text-sm font-small" title="{{ .Title }}">
+                {{ .Name | markdownify }}
+            </p>
+        </a>
+    </li>
+{{ end }}
+</ul>
+
+<style>
+/* 可折叠菜单标题样式 */
+.collapsible-smd {
+  display: flex; /* 使用弹性布局 */
+  justify-content: space-between; /* 内容两端对齐 */
+  align-items: center; /* 垂直居中对齐 */
+  width: 100%;
+  padding: 12px 20px; /* 设置内边距 */
+  color: #fff; /* 设置文字颜色 */
+  cursor: pointer; /* 鼠标变为手型 */
+  background-color: rgba(12, 44, 19, 0.4);
+  border-radius: 10px; /* 圆角 */
+  height: 50px;
+  transition: background-color 0.3s; /* 背景色变化过渡效果 */
+} 
+
+/* 箭头样式 */
+.collapsible-smd::after {
+  content: ''; /* 生成伪元素 */
+  width: 9px; /* 设置宽度 */
+  height: 9px; /* 设置高度 */
+  border-right: 2px solid #fff; /* 右边框 - 箭头右半部分 */
+  border-bottom: 2px solid #fff; /* 下边框 - 箭头下半部分 */
+  transform: rotate(45deg); /* 旋转成向下箭头 */
+  transition: transform 0.3s; /* 旋转过渡效果 */
+  flex-shrink: 0; /* 防止压缩 */
+}
+/* 鼠标悬停效果 */
+.collapsible-smd:hover {
+  background-color: rgba(22, 72, 33, 0.8); /* 悬停时背景色变深 */
+}   
+/* 展开状态下的箭头样式 */
+.collapsible-smd.active::after {
+  transform: rotate(225deg); /* 旋转成向上箭头 */
+}
+
+/* 可折叠内容区域样式 - 初始隐藏 */
+.list {
+  display: none; /* 初始状态隐藏 */
+  width: 100%; /* 宽度占满父元素 */
+  color: #fff; /* 文字颜色 */
+  list-style: none; /* 移除默认列表样式 */
+  padding: 0; /* 移除默认内边距 */
+  margin: 0; /* 移除默认外边距 */
+}
+
+/* 内容区域展开状态 - 直接使用display属性控制，不再依赖active类 */
+
+/* 列表项样式 */
+.list li {
+  padding: 11px 20px; /* 内边距 */
+  cursor: pointer; /* 鼠标手型 */
+  transition: background-color 0.2s; /* 背景色过渡 */
+  background-color: rgba(73, 78, 74, 0.2);
+  font-size: 14px; /* 字体大小 */
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 超出部分隐藏 */
+  text-overflow: ellipsis; /* 超出部分显示省略号 */
+  border-radius: 10px;
+}
+
+/* 列表项悬停效果 */
+.list li:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* 悬停时背景色变浅灰色 */
+}
+</style>
+
+<script>
+// 确保在DOM加载完成后执行
+if (typeof document !== 'undefined') {
+  // 子菜单切换函数
+  function toggleSubmenu(element) {
+    // 添加/移除active类
+    element.classList.toggle('active');
+    
+    // 获取下一个兄弟元素（子菜单ul）
+    var submenu = element.nextElementSibling;
+    
+    // 切换子菜单的显示状态
+    if (submenu && submenu.classList.contains('list')) {
+      if (submenu.style.display === 'block') {
+        submenu.style.display = 'none';
+      } else {
+        submenu.style.display = 'block';
+      }
+    }
+    
+    // 阻止事件冒泡
+    if (window.event && typeof window.event.stopPropagation === 'function') {
+      window.event.stopPropagation();
+    }
+    
+    return false;
+  }
+  
+  // 页面加载完成后初始化
+  document.addEventListener('DOMContentLoaded', function() {
+    // 为包含链接的菜单项添加额外的点击处理
+    const menuLinks = document.querySelectorAll('.collapsible-smd > a');
+    if (menuLinks && menuLinks.forEach) {
+      menuLinks.forEach(link => {
+        // 点击链接时阻止事件冒泡到父元素
+        link.addEventListener('click', function(e) {
+          if (typeof e.stopPropagation === 'function') {
+            e.stopPropagation();
+          }
+        });
+      });
+    }
+    
+    // 确保所有子菜单初始状态为隐藏
+    const submenus = document.querySelectorAll('.list');
+    if (submenus && submenus.forEach) {
+      submenus.forEach(submenu => {
+        submenu.style.display = 'none';
+      });
+    }
+  });
+}
+</script>

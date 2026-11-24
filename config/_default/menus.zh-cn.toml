@@ -1,0 +1,121 @@
+[[main]]
+name = "关于"
+pageRef = "About"
+weight = 1
+
+[[main]]
+name = "愿景"
+pageRef = "whitepaper"
+weight = 2
+
+[[main]]
+name = "理论"
+weight = 3
+
+  [[main]]
+  name = "SMD方法论"
+  parent = "理论"
+  pageRef = "smd-methodology"
+  weight = 31
+  
+  [[main]]
+  name = "SMD系统疗法"
+  parent = "理论"
+  pageRef = "#"
+  weight = 32
+      
+  [[main]]
+  name = "SMD标准化"
+  parent = "理论"
+  url = "#"
+  weight = 33
+
+[[main]]
+name = "项目"
+weight = 4
+
+  [[main]]
+  name = "1、SMD正觉训练营"
+  parent = "项目"
+  weight = 41
+  pageRef = "/whitepaper/smd-club/"
+
+  [[main]]
+  name = "2、SMD标准化理疗培训班"
+  parent = "项目"
+  weight = 42
+  pageRef = "#"
+  
+  [[main]]
+  name = "3、SMD人工智能"
+  parent = "项目"
+  weight = 43
+  pageRef = "/whitepaper/smd-ai/"
+  
+  [[main]]
+  name = "4、SMD连锁医馆"
+  parent = "项目"
+  weight = 44
+  pageRef = "/whitepaper/smd-medical-hall/"
+  
+  [[main]]
+  name = "5、SMD疗养中心"
+  parent = "项目"
+  weight = 45
+  pageRef = "/whitepaper/smd-center/"
+  
+  [[main]]
+  name = "6、SMD大健康产业园"
+  parent = "项目"
+  weight = 46
+  pageRef = "/whitepaper/smd-park/"
+  
+  [[main]]
+  name = "7、SMD社区康养综合体"
+  parent = "项目"
+  weight = 47
+  pageRef = "#"
+  
+  [[main]]
+  name = "8、SMD国际健康学院"
+  parent = "项目"
+  weight = 48
+  pageRef = "/whitepaper/smd-college/"
+
+[[main]]
+name = "博客"
+pageRef = "Blog"
+weight = 5
+
+[[main]]
+name = "联系"
+pageRef = "Contact"
+weight = 6
+
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/hhpf/"
+  weight = 7
+
+
+
+[[footer]]
+  name = "社交媒体"
+  pageRef = "#"
+  weight = 21
+
+[[footer]]
+  name = "问答集锦"
+  pageRef = "FAQs"
+  weight = 22
+
+[[footer]]
+name = "隐私政策"
+pageRef = "Legal"
+weight = 23
+
+[[footer]]
+name = "网站架构"
+pageRef = "WebsiteStack"
+weight = 24
